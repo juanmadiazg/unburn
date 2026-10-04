@@ -296,7 +296,7 @@ Son propuestas del plan de negocio, **no acuerdos existentes**.
 |---|---|---|---|
 | **Canal de venta** | Agencias de automatización e integradores que montan agentes y flujos de n8n para PYMES | Llevan Unburn a sus clientes | Comisión por cliente referido |
 | **Ecosistema** | Frameworks de agentes y plataformas de automatización (n8n, LangChain, CrewAI…) | Visibilidad: Unburn aparece en sus guías de integración | Una integración útil para sus usuarios |
-| **Infraestructura** | AWS (alojamiento) y su *marketplace* | Infraestructura y un canal de compra para grandes empresas, que a menudo prefieren comprar a través de su nube | Consumo de infraestructura |
+| **Infraestructura** | *Marketplace* de AWS | Un canal de compra para grandes empresas, que a menudo prefieren comprar a través de su nube | Ventas a través de su *marketplace* |
 
 **Nota sobre n8n:** no hace falta ninguna alianza para funcionar con n8n. Sus nodos de OpenAI permiten cambiar la dirección base, así que basta con apuntarlos a Unburn. Publicar un nodo propio verificado en n8n es una mejora futura **[Arquitectura objetivo]**.
 
@@ -593,7 +593,7 @@ import anthropic
 
 client = anthropic.Anthropic(
     base_url="https://api.unburn.example/anthropic",  # dirección de Unburn (ficticia)
-    api_key="ub_live_agente_auditor_123",             # clave virtual (ficticia)
+    api_key="ub_live_agente_redactor_456",             # clave virtual (ficticia)
 )
 ```
 
@@ -681,7 +681,7 @@ Este apartado describe **qué** comprueba Unburn en cada paso y **en qué orden*
 - Añade la llamada al **grafo de sesión**.
 
 **Paso 3. Normalización.**
-- Identifica el proveedor, la API (*Chat Completions*, *Responses* o *Messages*) y el modelo, y comprueba que todas las opciones de la petición están admitidas (5.3). Si alguna no lo está, responde **403**. Fija también la cuenta o el proyecto del proveedor al que se carga la petición.
+- Identifica el proveedor, la API (*Chat Completions*, *Responses* o *Messages*) y el modelo, comprueba que el modelo está entre los permitidos de la clave virtual y que todas las opciones de la petición están admitidas (5.3). Si algo no lo está, responde **403**. Fija también la cuenta o el proyecto del proveedor al que se carga la petición.
 - **Límite de respuesta.** Si la petición no trae un tamaño máximo de respuesta, Unburn le añade uno; si trae uno mayor que el máximo configurado por el cliente, lo reduce. El valor por defecto debe ser generoso, porque en los modelos que razonan ese límite incluye los tokens de razonamiento, y uno demasiado bajo puede agotarse antes de que el modelo responda. Si la petición pide más razonamiento del que permite el máximo del cliente, Unburn responde **400** con una explicación, en lugar de reenviar una petición que el proveedor rechazaría.
 - **Consumo real en streaming.** Unburn se asegura de que el proveedor informe del consumo real al final de la respuesta. Si para ello tiene que activar una opción que el cliente no pidió, no le reenvía esa información extra, para no romper su código.
 - **Estimación de los tokens de entrada.** Se cuenta de forma aproximada el contenido de la petición y se añade un margen de seguridad. Si la entrada supera el máximo configurado por el cliente, responde **400**.
@@ -949,7 +949,7 @@ Las librerías oficiales de OpenAI y Anthropic **reintentan automáticamente** c
 | **400** | La petición no cumple los límites que ha configurado el cliente: su entrada supera el máximo, o el máximo de respuesta no deja sitio al razonamiento que pide | No |
 | **401** | Clave virtual inválida o revocada | No |
 | **402** | Presupuesto agotado, cuota del plan agotada o tope de excedente alcanzado | No (a propósito: reintentar no lo arregla) |
-| **403** | API u opción no admitida (5.3); referencia a una respuesta de otra clave o creada fuera de Unburn; agente no permitido para esa clave o cabecera de agente obligatoria ausente; petición que obliga a usar una herramienta no permitida; o el modelo pidió una herramienta no permitida (sin streaming) | No |
+| **403** | API u opción no admitida (5.3); modelo no permitido para esa clave; referencia a una respuesta de otra clave o creada fuera de Unburn; agente no permitido para esa clave o cabecera de agente obligatoria ausente; petición que obliga a usar una herramienta no permitida; o el modelo pidió una herramienta no permitida (sin streaming) | No |
 | **422** | Bucle detectado en modo bloqueo | No |
 | **429** | Frenado por el sistema inmunológico o por los límites de volumen de la entrada (WAF por dirección IP y gateway por clave virtual). Indica **exceso de velocidad**, nunca falta de presupuesto | Sí, tras esperar |
 | **502** | El proveedor devolvió un error o no está disponible | Sí |

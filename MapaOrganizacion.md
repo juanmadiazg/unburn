@@ -4,7 +4,7 @@
 
 El mapa de la organización muestra cómo está organizada Unburn por dentro (unidades de negocio y departamentos), con quién se relaciona por fuera (socios, proveedores y otras entidades) y qué relación hay entre ellos.
 
-Como Unburn es un SaaS, la empresa emprendedora y la que explota el sistema son la misma, así que se presenta un único mapa.
+Como Unburn es un SaaS, la empresa emprendedora y la que explota el sistema son la misma. La excepción es el despliegue privado, en el que el cliente explota su propia instalación. Aun así, la organización de Unburn es la misma, así que se presenta un único mapa.
 
 ## 2. Leyenda
 
@@ -27,8 +27,8 @@ Como Unburn es un SaaS, la empresa emprendedora y la que explota el sistema son 
 
 | Unidad | Qué ofrece |
 |---|---|
-| **Unburn Cloud** | Planes Gratis y Pro, que el cliente contrata solo desde la web. Pensada para desarrolladores, startups y PYMES. |
-| **Unburn Enterprise** | Contratos personalizados para grandes empresas y sectores regulados (banca, seguros, salud), con más garantías y más privacidad. |
+| **Unburn Autoservicio** | Planes Gratis y Pro, que el cliente contrata solo desde la web. Pensada para desarrolladores, startups y PYMES. |
+| **Unburn Enterprise** | Contratos personalizados para grandes empresas y sectores regulados (banca, seguros, salud), con más garantías y más privacidad. Se ofrece en dos modalidades: Unburn Cloud Confidencial (nube con computación confidencial) y despliegue privado en la infraestructura del cliente. Los contratos Enterprise se facturan según lo acordado en cada contrato; las ventas a través del marketplace las cobra el proveedor de cloud, que paga después a Unburn. |
 
 ### 3.3. Departamentos
 
@@ -39,7 +39,7 @@ Como Unburn es un SaaS, la empresa emprendedora y la que explota el sistema son 
 | **Soporte** | Ayuda a los clientes a empezar a usar Unburn y resuelve sus dudas e incidencias. |
 | **Ventas** | Vende los contratos para grandes empresas y gestiona la relación con los socios. |
 | **Finanzas** | Cobra las suscripciones y controla los gastos de Unburn. |
-| **Legal y cumplimiento** | Prepara los contratos y se asegura de que Unburn cumple la ley (protección de datos, regulación de la IA, etc.). |
+| **Legal y cumplimiento** | Prepara los contratos y se asegura de que Unburn cumple la ley (protección de datos, regulación de la IA, etc.). Al principio puede ser un asesor externo. |
 
 ### 3.4. Socios
 
@@ -72,10 +72,10 @@ Como Unburn es un SaaS, la empresa emprendedora y la que explota el sistema son 
 
 | Desde | Hacia | Relación |
 |---|---|---|
-| Unburn | Unburn Cloud y Unburn Enterprise | Se organiza en estas dos líneas de negocio. |
+| Unburn | Unburn Autoservicio y Unburn Enterprise | Se organiza en estas dos líneas de negocio. |
 | Inversores | Dirección | Aportan dinero e influyen en la estrategia. |
 | Dirección | Departamentos | Marca las prioridades y reparte los recursos. |
-| Unburn Cloud | Clientes | Les da el servicio con los planes Gratis y Pro. |
+| Unburn Autoservicio | Clientes | Les da el servicio con los planes Gratis y Pro. |
 | Unburn Enterprise | Clientes | Les da el servicio con un contrato personalizado. |
 | Ingeniería | Proveedor de cloud | Instala y mantiene la plataforma en su infraestructura. |
 | Ingeniería | Plataforma de desarrollo | Desarrolla y publica las nuevas versiones. |
@@ -87,6 +87,8 @@ Como Unburn es un SaaS, la empresa emprendedora y la que explota el sistema son 
 | Socios | Clientes | Llevan nuevos clientes a Unburn. |
 | Clientes | Plataforma de pagos | Pagan su suscripción a Unburn. |
 | Finanzas | Plataforma de pagos | Cobra las suscripciones. |
+| Finanzas | Socios | Paga las comisiones por los clientes que traen. |
+| Finanzas | Proveedores (de cloud, de pagos y de desarrollo) | Compara ofertas y controla sus costes. |
 | Legal | Clientes y proveedores | Firma los contratos con ellos. |
 | Legal | Reguladores | Se asegura de que Unburn cumple la ley. |
 | Auditores | Clientes | Revisan su uso de la IA con el registro que guarda Unburn. |
