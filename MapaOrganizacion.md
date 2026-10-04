@@ -28,7 +28,7 @@ Como Unburn es un SaaS, la empresa emprendedora y la que explota el sistema son 
 | Unidad | Qué ofrece |
 |---|---|
 | **Unburn Autoservicio** | Planes Gratis y Pro, que el cliente contrata solo desde la web. Pensada para desarrolladores, startups y PYMES. |
-| **Unburn Enterprise** | Contratos personalizados para grandes empresas y sectores regulados (banca, seguros, salud), con más garantías y más privacidad. Se ofrece en dos modalidades: Unburn Cloud Confidencial (nube con computación confidencial) y despliegue privado en la infraestructura del cliente. Los contratos Enterprise se facturan según lo acordado en cada contrato; las ventas a través del marketplace las cobra el proveedor de cloud, que paga después a Unburn. |
+| **Unburn Enterprise** | Contratos personalizados para grandes empresas y sectores regulados (banca, seguros, salud), con más garantías y más privacidad. Se ofrece en dos modalidades: Unburn Cloud Confidencial (nube con computación confidencial) y despliegue privado en la infraestructura del cliente. |
 
 ### 3.3. Departamentos
 
@@ -73,6 +73,7 @@ Como Unburn es un SaaS, la empresa emprendedora y la que explota el sistema son 
 | Desde | Hacia | Relación |
 |---|---|---|
 | Unburn | Unburn Autoservicio y Unburn Enterprise | Se organiza en estas dos líneas de negocio. |
+| Unburn | Departamentos | Se organiza internamente en estos seis departamentos. |
 | Inversores | Dirección | Aportan dinero e influyen en la estrategia. |
 | Dirección | Departamentos | Marca las prioridades y reparte los recursos. |
 | Unburn Autoservicio | Clientes | Les da el servicio con los planes Gratis y Pro. |
@@ -86,6 +87,7 @@ Como Unburn es un SaaS, la empresa emprendedora y la que explota el sistema son 
 | Ventas | Clientes | Vende los contratos Enterprise a las grandes empresas. |
 | Ventas | Socios | Gestiona los acuerdos con agencias, plataformas y el marketplace. |
 | Socios | Clientes | Llevan nuevos clientes a Unburn. |
+| Marketplace del proveedor de cloud | Unburn Enterprise | Cobra a las grandes empresas las contrataciones hechas en su tienda y después paga a Unburn. |
 | Clientes | Plataforma de pagos | Pagan su suscripción a Unburn. |
 | Finanzas | Plataforma de pagos | Cobra las suscripciones. |
 | Finanzas | Socios | Paga las comisiones por los clientes que traen. |
