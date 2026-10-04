@@ -83,6 +83,7 @@ Como Unburn es un SaaS, la empresa emprendedora y la que explota el sistema son 
 | Clientes | Proveedores de modelos de IA | Les pagan directamente por el uso de la IA. |
 | Usuarios finales | Clientes | Usan su aplicación de IA, cuyo tráfico pasa por Unburn. |
 | Soporte | Clientes | Les ayuda a empezar y resuelve sus incidencias. |
+| Ventas | Clientes | Vende los contratos Enterprise a las grandes empresas. |
 | Ventas | Socios | Gestiona los acuerdos con agencias, plataformas y el marketplace. |
 | Socios | Clientes | Llevan nuevos clientes a Unburn. |
 | Clientes | Plataforma de pagos | Pagan su suscripción a Unburn. |
