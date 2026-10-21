@@ -1,0 +1,85 @@
+{
+  "categoriasDatos": [
+    { "id": "personales", "nombre": "Datos personales", "color": "rose" },
+    { "id": "financieros", "nombre": "Datos financieros", "color": "amber" },
+    { "id": "internos", "nombre": "Documentación interna", "color": "sky" },
+    { "id": "publicos", "nombre": "Datos públicos", "color": "emerald" }
+  ],
+  "agentes": [
+    { "id": "agente-orquestador", "orgId": "org_nexo", "descripcion": "Recibe la tarea del usuario y la reparte entre los demás agentes.", "claves": ["kv_research"], "ultimaActividad": "2026-10-21T16:40:00", "gastoMes": 141.20 },
+    { "id": "agente-investigador", "orgId": "org_nexo", "descripcion": "Busca y resume fuentes internas y públicas.", "claves": ["kv_research"], "ultimaActividad": "2026-10-21T16:38:00", "gastoMes": 208.75 },
+    { "id": "agente-redactor", "orgId": "org_nexo", "descripcion": "Redacta informes para clientes a partir de las fuentes.", "claves": ["kv_research"], "ultimaActividad": "2026-10-21T16:39:00", "gastoMes": 162.45 },
+    { "id": "agente-soporte", "orgId": "org_nexo", "descripcion": "Chatbot de atención al cliente en la web de Nexo.", "claves": ["kv_chatbot"], "ultimaActividad": "2026-10-21T16:44:00", "gastoMes": 301.75 },
+    { "id": "agente-facturacion", "orgId": "org_nexo", "descripcion": "Prepara facturas y avisos de cobro.", "claves": ["kv_facturacion"], "ultimaActividad": "2026-10-21T15:20:00", "gastoMes": 96.70 },
+    { "id": "agente-sql", "orgId": "org_nexo", "descripcion": "Responde preguntas de negocio consultando la base de datos.", "claves": ["kv_datos"], "ultimaActividad": "2026-10-21T13:58:00", "gastoMes": 287.35 }
+  ],
+  "herramientas": [
+    { "id": "t_buscar_documentos", "orgId": "org_nexo", "nombre": "buscar_documentos", "ejecuta": "cliente", "categoria": "internos", "vistaPrimeraVez": "2026-04-13", "estado": "aprobada", "usosMax": 20, "tamMaxResultadoKb": 256 },
+    { "id": "t_consultar_bd_clientes", "orgId": "org_nexo", "nombre": "consultar_bd_clientes", "ejecuta": "cliente", "categoria": "personales", "vistaPrimeraVez": "2026-05-21", "estado": "aprobada", "usosMax": 10, "tamMaxResultadoKb": 512 },
+    { "id": "t_crear_ticket_crm", "orgId": "org_nexo", "nombre": "crear_ticket_crm", "ejecuta": "cliente", "categoria": "internos", "vistaPrimeraVez": "2026-03-06", "estado": "aprobada", "usosMax": 3, "tamMaxResultadoKb": 16 },
+    { "id": "t_generar_factura", "orgId": "org_nexo", "nombre": "generar_factura", "ejecuta": "cliente", "categoria": "financieros", "vistaPrimeraVez": "2026-03-11", "estado": "aprobada", "usosMax": 5, "tamMaxResultadoKb": 64 },
+    { "id": "t_consultar_saldo_clientes", "orgId": "org_nexo", "nombre": "consultar_saldo_clientes", "ejecuta": "cliente", "categoria": "financieros", "vistaPrimeraVez": "2026-03-11", "estado": "aprobada", "usosMax": 10, "tamMaxResultadoKb": 128 },
+    { "id": "t_enviar_email", "orgId": "org_nexo", "nombre": "enviar_email", "ejecuta": "cliente", "categoria": "personales", "vistaPrimeraVez": "2026-03-12", "estado": "aprobada", "usosMax": 2, "tamMaxResultadoKb": 8 },
+    { "id": "t_exportar_csv_s3", "orgId": "org_nexo", "nombre": "exportar_csv_s3", "ejecuta": "cliente", "categoria": null, "vistaPrimeraVez": "2026-10-19", "estado": "pendiente", "usosMax": null, "tamMaxResultadoKb": null, "vistaEn": ["agente-sql"] },
+    { "id": "t_leer_drive_compartido", "orgId": "org_nexo", "nombre": "leer_drive_compartido", "ejecuta": "cliente", "categoria": null, "vistaPrimeraVez": "2026-10-20", "estado": "pendiente", "usosMax": null, "tamMaxResultadoKb": null, "vistaEn": ["agente-investigador"] },
+    { "id": "t_web_search", "orgId": "org_nexo", "nombre": "web_search", "ejecuta": "proveedor", "categoria": "publicos", "vistaPrimeraVez": "2026-04-13", "estado": "aprobada", "usosMax": 5, "tamMaxResultadoKb": null, "tarifa": "9,20 € / 1.000 usos" },
+    { "id": "t_code_execution", "orgId": "org_nexo", "nombre": "code_execution", "ejecuta": "proveedor", "categoria": "internos", "vistaPrimeraVez": "2026-05-22", "estado": "aprobada", "usosMax": 3, "tamMaxResultadoKb": null, "tarifa": "0,03 € / sesión" },
+    { "id": "t_mcp_remoto", "orgId": "org_nexo", "nombre": "mcp_remoto:github", "ejecuta": "proveedor", "categoria": null, "vistaPrimeraVez": "2026-10-14", "estado": "bloqueada", "usosMax": null, "tamMaxResultadoKb": null, "tarifa": "Según tokens", "vistaEn": ["agente-investigador"] },
+
+    { "id": "t_p_web_search", "orgId": "org_pmartin", "nombre": "web_search", "ejecuta": "proveedor", "categoria": "publicos", "vistaPrimeraVez": "2026-08-20", "estado": "aprobada", "usosMax": 3, "tamMaxResultadoKb": null, "tarifa": "9,20 € / 1.000 usos" },
+    { "id": "t_p_code_execution", "orgId": "org_pmartin", "nombre": "code_execution", "ejecuta": "proveedor", "categoria": null, "vistaPrimeraVez": "2026-10-02", "estado": "bloqueada", "usosMax": null, "tamMaxResultadoKb": null, "tarifa": "0,03 € / sesión" },
+    { "id": "t_p_file_search", "orgId": "org_pmartin", "nombre": "file_search", "ejecuta": "proveedor", "categoria": null, "vistaPrimeraVez": "2026-10-11", "estado": "bloqueada", "usosMax": null, "tamMaxResultadoKb": null, "tarifa": "2,30 € / 1.000 usos" }
+  ],
+  "grafos": {
+    "org_nexo": {
+      "modo": "proteccion",
+      "version": 48,
+      "actualizado": "2026-10-20T18:22:00",
+      "posiciones": {
+        "agente-orquestador": [120, 170],
+        "agente-investigador": [330, 70],
+        "agente-redactor": [330, 230],
+        "agente-facturacion": [330, 390],
+        "agente-soporte": [120, 470],
+        "agente-sql": [330, 530]
+      },
+      "puedeUsar": [
+        ["agente-orquestador", "t_buscar_documentos"],
+        ["agente-investigador", "t_buscar_documentos"],
+        ["agente-investigador", "t_web_search"],
+        ["agente-redactor", "t_buscar_documentos"],
+        ["agente-soporte", "t_crear_ticket_crm"],
+        ["agente-soporte", "t_buscar_documentos"],
+        ["agente-sql", "t_consultar_bd_clientes"],
+        ["agente-sql", "t_code_execution"],
+        ["agente-facturacion", "t_generar_factura"],
+        ["agente-facturacion", "t_consultar_saldo_clientes"],
+        ["agente-facturacion", "t_enviar_email"]
+      ],
+      "puedeDelegar": [
+        ["agente-orquestador", "agente-investigador"],
+        ["agente-orquestador", "agente-redactor"],
+        ["agente-orquestador", "agente-facturacion"],
+        ["agente-investigador", "agente-redactor"],
+        ["agente-redactor", "agente-investigador"],
+        ["agente-soporte", "agente-sql"]
+      ],
+      "prohibidas": [
+        ["agente-soporte", "personales"],
+        ["agente-soporte", "financieros"],
+        ["agente-orquestador", "financieros"],
+        ["agente-investigador", "personales"],
+        ["agente-redactor", "financieros"]
+      ]
+    },
+    "org_pmartin": {
+      "modo": "aprendizaje",
+      "version": 7,
+      "actualizado": "2026-10-11T10:05:00",
+      "posiciones": {},
+      "puedeUsar": [],
+      "puedeDelegar": [],
+      "prohibidas": []
+    }
+  }
+}

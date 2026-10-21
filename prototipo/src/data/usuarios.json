@@ -1,0 +1,177 @@
+{
+ "usuariosPanel": [
+  {
+   "id": "u_laura",
+   "orgId": "org_nexo",
+   "nombre": "Laura",
+   "apellidos": "Gómez Rivas",
+   "email": "laura.gomez@nexoanalytics.es",
+   "rol": "administrador",
+   "cargo": "CTO",
+   "ultimoAcceso": "2026-10-21T16:31:00"
+  },
+  {
+   "id": "u_ivan",
+   "orgId": "org_nexo",
+   "nombre": "Iván",
+   "apellidos": "Ortega Sanz",
+   "email": "ivan.ortega@nexoanalytics.es",
+   "rol": "administrador",
+   "cargo": "Platform engineer",
+   "ultimoAcceso": "2026-10-21T09:02:00"
+  },
+  {
+   "id": "u_sara",
+   "orgId": "org_nexo",
+   "nombre": "Sara",
+   "apellidos": "Benítez Mora",
+   "email": "sara.benitez@nexoanalytics.es",
+   "rol": "lector",
+   "cargo": "Directora financiera",
+   "ultimoAcceso": "2026-10-18T12:44:00"
+  },
+  {
+   "id": "u_carlos",
+   "orgId": "org_nexo",
+   "nombre": "Carlos",
+   "apellidos": "Ruiz Pastor",
+   "email": "carlos.ruiz@auditoria-externa.es",
+   "rol": "lector",
+   "cargo": "Auditor externo",
+   "ultimoAcceso": "2026-10-21T11:15:00"
+  },
+  {
+   "id": "u_pablo",
+   "orgId": "org_pmartin",
+   "nombre": "Pablo",
+   "apellidos": "Martín Gil",
+   "email": "pablo@pmartin.dev",
+   "rol": "administrador",
+   "cargo": "Desarrollador",
+   "ultimoAcceso": "2026-10-21T15:58:00"
+  }
+ ],
+ "empleados": [
+  {
+   "id": "e_marta",
+   "nombre": "Marta",
+   "apellidos": "Soler Vidal",
+   "email": "marta.soler@unburn.eu",
+   "departamento": "Soporte",
+   "rol": "Agente de soporte"
+  },
+  {
+   "id": "e_andrea",
+   "nombre": "Andrea",
+   "apellidos": "Vidal Ramos",
+   "email": "andrea.vidal@unburn.eu",
+   "departamento": "Soporte",
+   "rol": "Responsable de soporte"
+  },
+  {
+   "id": "e_diego",
+   "nombre": "Diego",
+   "apellidos": "Navarro León",
+   "email": "diego.navarro@unburn.eu",
+   "departamento": "Ingeniería y Ciberseguridad",
+   "rol": "Ingeniero de plataforma (guardia)"
+  },
+  {
+   "id": "e_elena",
+   "nombre": "Elena",
+   "apellidos": "Prieto Campos",
+   "email": "elena.prieto@unburn.eu",
+   "departamento": "Finanzas",
+   "rol": "Responsable de finanzas"
+  },
+  {
+   "id": "e_javier",
+   "nombre": "Javier",
+   "apellidos": "Lozano Peña",
+   "email": "javier.lozano@unburn.eu",
+   "departamento": "Ventas",
+   "rol": "Account executive Enterprise"
+  },
+  {
+   "id": "e_lucia",
+   "nombre": "Lucía",
+   "apellidos": "Herrera Ortiz",
+   "email": "lucia.herrera@unburn.eu",
+   "departamento": "Legal y cumplimiento",
+   "rol": "Asesora legal (externa)"
+  },
+  {
+   "id": "e_sergio",
+   "nombre": "Sergio",
+   "apellidos": "Campos Ruiz",
+   "email": "sergio.campos@unburn.eu",
+   "departamento": "Dirección",
+   "rol": "CEO y cofundador"
+  }
+ ],
+ "personasDemo": [
+  {
+   "id": "laura",
+   "tipo": "cliente",
+   "usuarioId": "u_laura",
+   "etiqueta": "Administradora · Nexo Analytics",
+   "detalle": "Cliente · plan Pro · rol administrador"
+  },
+  {
+   "id": "carlos",
+   "tipo": "cliente",
+   "usuarioId": "u_carlos",
+   "etiqueta": "Lector · Nexo Analytics",
+   "detalle": "Auditor externo · plan Pro · solo consulta"
+  },
+  {
+   "id": "pablo",
+   "tipo": "cliente",
+   "usuarioId": "u_pablo",
+   "etiqueta": "Administrador · cuenta personal",
+   "detalle": "Cliente · plan Gratis · rol administrador"
+  },
+  {
+   "id": "sergio",
+   "tipo": "backoffice",
+   "empleadoId": "e_sergio",
+   "etiqueta": "Unburn · Dirección",
+   "detalle": "Cuadro de mando e informe mensual"
+  },
+  {
+   "id": "marta",
+   "tipo": "backoffice",
+   "empleadoId": "e_marta",
+   "etiqueta": "Unburn · Soporte",
+   "detalle": "Tickets de clientes (BP-13)"
+  },
+  {
+   "id": "diego",
+   "tipo": "backoffice",
+   "empleadoId": "e_diego",
+   "etiqueta": "Unburn · Ingeniería",
+   "detalle": "Catálogo, incidencias técnicas y versiones"
+  },
+  {
+   "id": "javier",
+   "tipo": "backoffice",
+   "empleadoId": "e_javier",
+   "etiqueta": "Unburn · Ventas",
+   "detalle": "Socios y contratos Enterprise (BP-01, BP-02)"
+  },
+  {
+   "id": "elena",
+   "tipo": "backoffice",
+   "empleadoId": "e_elena",
+   "etiqueta": "Unburn · Finanzas",
+   "detalle": "Cobros, proveedores e informe (BP-12, BP-14, BP-18)"
+  },
+  {
+   "id": "lucia",
+   "tipo": "backoffice",
+   "empleadoId": "e_lucia",
+   "etiqueta": "Unburn · Legal",
+   "detalle": "Contratos, proveedores y reguladores"
+  }
+ ]
+}

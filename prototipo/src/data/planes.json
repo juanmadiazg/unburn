@@ -1,0 +1,108 @@
+[
+ {
+  "id": "gratis",
+  "nombre": "Gratis",
+  "pensadoPara": "Desarrolladores individuales y estudiantes",
+  "precioMensual": 0,
+  "precioTexto": "0 €",
+  "peticionesIncluidas": 10000,
+  "excedente": null,
+  "maxClavesVirtuales": 3,
+  "diasRetencion": 7,
+  "canalesAlerta": [
+   "email"
+  ],
+  "diagnosticoCausal": false,
+  "escudoCompleto": false,
+  "inmunologicoCompleto": false,
+  "alAgotarCuota": "El servicio se corta hasta el mes siguiente o hasta que cambies de plan.",
+  "funciones": [
+   "Hasta 3 claves virtuales",
+   "Presupuestos diarios y mensuales",
+   "Detección de bucles (avisar o bloquear)",
+   "Consumos anómalos: aviso y freno (429)",
+   "Herramientas del proveedor: autorización por clave",
+   "Alertas por email",
+   "Registro de auditoría: 7 días"
+  ],
+  "respuestasInmunologico": [
+   "aviso",
+   "freno"
+  ]
+ },
+ {
+  "id": "pro",
+  "nombre": "Pro",
+  "pensadoPara": "Startups y PYMES",
+  "precioMensual": 49,
+  "precioTexto": "49 € / mes",
+  "peticionesIncluidas": 500000,
+  "excedente": {
+   "bloque": 50000,
+   "precioBloque": 5
+  },
+  "maxClavesVirtuales": null,
+  "diasRetencion": 30,
+  "canalesAlerta": [
+   "email",
+   "slack",
+   "teams",
+   "webhook"
+  ],
+  "diagnosticoCausal": true,
+  "escudoCompleto": true,
+  "inmunologicoCompleto": true,
+  "alAgotarCuota": "Se paga excedente por bloques hasta el tope que fijes tú.",
+  "funciones": [
+   "500.000 peticiones incluidas",
+   "Claves virtuales ilimitadas",
+   "Escudo de herramientas completo y caminos indirectos",
+   "Diagnóstico causal de bucles",
+   "Sistema inmunológico completo: modelo económico, bloqueo temporal y límites endurecidos 24 h",
+   "Alertas por email, Slack, Teams o webhook",
+   "Registro de auditoría: 30 días",
+   "Excedente con tope configurable"
+  ],
+  "respuestasInmunologico": [
+   "aviso",
+   "freno",
+   "modelo",
+   "bloqueo"
+  ]
+ },
+ {
+  "id": "enterprise",
+  "nombre": "Enterprise",
+  "pensadoPara": "Grandes empresas y sectores regulados",
+  "precioMensual": null,
+  "precioTexto": "Contrato a medida",
+  "peticionesIncluidas": null,
+  "excedente": null,
+  "maxClavesVirtuales": null,
+  "diasRetencion": 180,
+  "canalesAlerta": [
+   "email",
+   "slack",
+   "teams",
+   "webhook"
+  ],
+  "diagnosticoCausal": true,
+  "escudoCompleto": true,
+  "inmunologicoCompleto": true,
+  "alAgotarCuota": "Según contrato (IC-05).",
+  "funciones": [
+   "Todo lo del plan Pro",
+   "Nube confidencial (atestación) o despliegue privado",
+   "Disponibilidad garantizada por contrato (SLA)",
+   "Soporte dedicado",
+   "Registro de auditoría: 6 meses o más",
+   "Contrato a medida, con licencia anual en el despliegue privado"
+  ],
+  "respuestasInmunologico": [
+   "aviso",
+   "freno",
+   "modelo",
+   "bloqueo"
+  ]
+ }
+]
