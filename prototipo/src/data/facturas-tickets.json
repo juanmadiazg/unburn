@@ -1,0 +1,272 @@
+{
+  "facturas": [
+    {
+      "id": "UNB-2026-001873",
+      "orgId": "org_nexo",
+      "fecha": "2026-10-01",
+      "periodo": "2026-09",
+      "plan": "pro",
+      "peticionesFacturables": 497310,
+      "bloquesExcedente": 0,
+      "importe": 49.0,
+      "iva": 10.29,
+      "total": 59.29,
+      "estadoCobro": "pagada"
+    },
+    {
+      "id": "UNB-2026-001511",
+      "orgId": "org_nexo",
+      "fecha": "2026-09-01",
+      "periodo": "2026-08",
+      "plan": "pro",
+      "peticionesFacturables": 531870,
+      "bloquesExcedente": 1,
+      "importe": 54.0,
+      "iva": 11.34,
+      "total": 65.34,
+      "estadoCobro": "pagada"
+    },
+    {
+      "id": "UNB-2026-001166",
+      "orgId": "org_nexo",
+      "fecha": "2026-08-01",
+      "periodo": "2026-07",
+      "plan": "pro",
+      "peticionesFacturables": 462905,
+      "bloquesExcedente": 0,
+      "importe": 49.0,
+      "iva": 10.29,
+      "total": 59.29,
+      "estadoCobro": "pagada"
+    },
+    {
+      "id": "UNB-2026-000842",
+      "orgId": "org_nexo",
+      "fecha": "2026-07-01",
+      "periodo": "2026-06",
+      "plan": "pro",
+      "peticionesFacturables": 388410,
+      "bloquesExcedente": 0,
+      "importe": 49.0,
+      "iva": 10.29,
+      "total": 59.29,
+      "estadoCobro": "pagada"
+    },
+    {
+      "id": "UNB-2026-000560",
+      "orgId": "org_nexo",
+      "fecha": "2026-06-01",
+      "periodo": "2026-05",
+      "plan": "pro",
+      "peticionesFacturables": 301220,
+      "bloquesExcedente": 0,
+      "importe": 49.0,
+      "iva": 10.29,
+      "total": 59.29,
+      "estadoCobro": "pagada"
+    },
+    {
+      "id": "UNB-2026-000318",
+      "orgId": "org_nexo",
+      "fecha": "2026-05-01",
+      "periodo": "2026-04",
+      "plan": "pro",
+      "peticionesFacturables": 244960,
+      "bloquesExcedente": 0,
+      "importe": 49.0,
+      "iva": 10.29,
+      "total": 59.29,
+      "estadoCobro": "pagada"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "TCK-1104",
+      "orgId": "org_nexo",
+      "cliente": "Nexo Analytics S.L.",
+      "abiertoPor": "Laura Gómez",
+      "asignadoA": null,
+      "fecha": "2026-10-21T16:52:00",
+      "asunto": "¿Por qué se bloqueó la llamada del investigador con un 422?",
+      "descripcion": "Nuestro informe de mercado se quedó a medias. En la sesión ses_7Hq2Lw la última llamada devolvió 422. ¿Es el bloqueo de bucles? ¿Cómo evitamos que vuelva a pasar sin desactivarlo?",
+      "peticionRelacionada": "evt_7Hq2Lw_c15",
+      "estado": "abierto",
+      "prioridad": "media",
+      "resolucion": null,
+      "mensajes": []
+    },
+    {
+      "id": "TCK-1098",
+      "orgId": "org_nexo",
+      "cliente": "Nexo Analytics S.L.",
+      "abiertoPor": "Iván Ortega",
+      "asignadoA": "e_diego",
+      "fecha": "2026-10-19T09:40:00",
+      "asunto": "Latencia alta en streaming con Anthropic",
+      "descripcion": "Desde el viernes, las respuestas en streaming de claude-sonnet-4-5 tardan ~2 s más en empezar cuando pasan por Unburn.",
+      "peticionRelacionada": "evt_hist_0042",
+      "estado": "escalado",
+      "prioridad": "alta",
+      "resolucion": null,
+      "incidenciaTecnica": "IT-0057",
+      "mensajes": [
+        {
+          "autor": "Marta Soler",
+          "tipo": "soporte",
+          "fecha": "2026-10-19T10:05:00",
+          "texto": "Gracias, Iván. En los metadatos veo latencias de primer byte de 2,4 s frente a 0,3 s la semana pasada, solo en Anthropic. Lo escalo a Ingeniería (BP-17)."
+        },
+        {
+          "autor": "Diego Navarro",
+          "tipo": "soporte",
+          "fecha": "2026-10-19T12:31:00",
+          "texto": "Confirmado: el buffer de revisión de herramientas en streaming no se libera hasta el primer bloque completo. Abrimos la incidencia técnica IT-0057 y preparamos un parche."
+        }
+      ],
+      "metadatosPeticion": {
+        "decision": "permitida",
+        "codigo": 200,
+        "motivo": "Sin reglas aplicables",
+        "fecha": "2026-10-18T17:22:05",
+        "agente": "agente-redactor",
+        "modelo": "claude-sonnet-4-5",
+        "latencia": "2.410 ms hasta el primer fragmento (streaming)",
+        "version": "cfg-v47"
+      }
+    },
+    {
+      "id": "TCK-1087",
+      "orgId": "org_nexo",
+      "cliente": "Nexo Analytics S.L.",
+      "abiertoPor": "Iván Ortega",
+      "asignadoA": "e_marta",
+      "fecha": "2026-09-01T08:55:00",
+      "asunto": "Cómo rotar la clave de facturación sin cortar el servicio",
+      "descripcion": "Queremos rotar prod-facturacion. ¿Se pierde el gasto acumulado del mes o la configuración?",
+      "peticionRelacionada": null,
+      "estado": "cerrado",
+      "prioridad": "baja",
+      "resolucion": "Al rotar, la clave nueva hereda la configuración, el gasto del periodo, la línea base y sus cadenas de respuestas (BP-05). Rotada el 01/09 sin incidencias.",
+      "mensajes": [
+        {
+          "autor": "Marta Soler",
+          "tipo": "soporte",
+          "fecha": "2026-09-01T09:10:00",
+          "texto": "Al rotar, la nueva clave hereda la configuración, el gasto del periodo, la línea base de consumo y la propiedad de sus cadenas de respuestas. Solo tenéis que cambiar la clave en vuestro código."
+        }
+      ]
+    },
+    {
+      "id": "TCK-1103",
+      "orgId": "org_kuro",
+      "cliente": "Kuro Labs S.L.",
+      "abiertoPor": "Nerea Ibáñez",
+      "asignadoA": "e_marta",
+      "fecha": "2026-10-21T12:20:00",
+      "asunto": "Error 402 aunque el presupuesto mensual no está agotado",
+      "descripcion": "Recibimos 402 en la clave prod-api pero el presupuesto mensual va por el 60 %.",
+      "peticionRelacionada": "evt_kuro_88213",
+      "estado": "abierto",
+      "prioridad": "alta",
+      "resolucion": null,
+      "mensajes": [
+        {
+          "autor": "Marta Soler",
+          "tipo": "soporte",
+          "fecha": "2026-10-21T12:48:00",
+          "texto": "Hola, Nerea. Estoy revisando los metadatos de la petición. Os digo algo en breve."
+        }
+      ],
+      "metadatosPeticion": {
+        "decision": "bloqueada",
+        "codigo": 402,
+        "motivo": "Presupuesto diario de la clave prod-api agotado (límite duro 80 €) · el presupuesto mensual no estaba agotado",
+        "fecha": "2026-10-21T12:11:40",
+        "agente": "(sin declarar)",
+        "modelo": "gpt-4.1",
+        "latencia": "3 ms",
+        "version": "cfg-v112"
+      }
+    },
+    {
+      "id": "TCK-1102",
+      "orgId": "org_bitacora",
+      "cliente": "Bitácora Legal S.L.P.",
+      "abiertoPor": "Óscar Fuentes",
+      "asignadoA": null,
+      "fecha": "2026-10-21T10:02:00",
+      "asunto": "¿Podemos exportar el registro de auditoría en CSV?",
+      "descripcion": "Nuestro auditor necesita el registro de septiembre en CSV con la versión de configuración de cada evento.",
+      "peticionRelacionada": null,
+      "estado": "abierto",
+      "prioridad": "baja",
+      "resolucion": null,
+      "mensajes": []
+    },
+    {
+      "id": "TCK-1099",
+      "orgId": "org_aula",
+      "cliente": "Aula Viva EdTech",
+      "abiertoPor": "Rocío Lara",
+      "asignadoA": "e_andrea",
+      "fecha": "2026-10-20T17:30:00",
+      "asunto": "La herramienta file_search aparece bloqueada",
+      "descripcion": "Nuestro asistente usa file_search de OpenAI y desde ayer recibe 403.",
+      "peticionRelacionada": "evt_aula_51022",
+      "estado": "cerrado",
+      "prioridad": "media",
+      "resolucion": "Las herramientas que ejecuta el proveedor están denegadas por defecto (DEC-10). El administrador la autorizó en Agentes y permisos.",
+      "mensajes": [
+        {
+          "autor": "Andrea Vidal",
+          "tipo": "soporte",
+          "fecha": "2026-10-20T17:52:00",
+          "texto": "Las herramientas del proveedor están denegadas por defecto en todos los planes. Podéis autorizarla en Agentes y permisos › Herramientas."
+        }
+      ],
+      "metadatosPeticion": {
+        "decision": "bloqueada",
+        "codigo": 403,
+        "motivo": "Herramienta del proveedor file_search no autorizada en la clave (denegada por defecto, DEC-10)",
+        "fecha": "2026-10-20T16:58:02",
+        "agente": "asistente-aulas",
+        "modelo": "gpt-4.1-mini",
+        "latencia": "5 ms",
+        "version": "cfg-v23"
+      }
+    },
+    {
+      "id": "TCK-1095",
+      "orgId": "org_helix",
+      "cliente": "Helix Logística S.A.",
+      "abiertoPor": "Tomás Rey",
+      "asignadoA": "e_diego",
+      "fecha": "2026-10-17T08:15:00",
+      "asunto": "Picos de 503 entre las 03:00 y las 03:20",
+      "descripcion": "Las claves con política «bloquear» devolvieron 503 durante unos minutos esta madrugada.",
+      "peticionRelacionada": "evt_helix_20391",
+      "estado": "escalado",
+      "prioridad": "alta",
+      "resolucion": null,
+      "incidenciaTecnica": "IT-0055",
+      "mensajes": [
+        {
+          "autor": "Marta Soler",
+          "tipo": "soporte",
+          "fecha": "2026-10-17T08:40:00",
+          "texto": "Vemos el 503 por política ante fallos (bloquear). Escalado a Ingeniería."
+        }
+      ],
+      "metadatosPeticion": {
+        "decision": "bloqueada",
+        "codigo": 503,
+        "motivo": "Fallo interno del Motor de presupuestos · política ante fallos de la clave: bloquear",
+        "fecha": "2026-10-17T03:04:51",
+        "agente": "agente-rutas",
+        "modelo": "gpt-4.1",
+        "latencia": "1.002 ms",
+        "version": "cfg-v61"
+      }
+    }
+  ]
+}

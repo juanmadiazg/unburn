@@ -1,0 +1,1080 @@
+{
+ "clientes": [
+  {
+   "id": "org_banco",
+   "nombre": "Banco Ibérico Digital S.A.",
+   "plan": "enterprise",
+   "modalidad": "Nube confidencial",
+   "estado": "activa",
+   "cobro": "pagado",
+   "peticionesMes": 6820400,
+   "cuota": 10000000,
+   "ingresoMes": 6500,
+   "socio": null,
+   "alta": "2026-06-01",
+   "pais": "España",
+   "ticketsAbiertos": 0,
+   "contrato": "ENT-2026-002",
+   "socioId": null
+  },
+  {
+   "id": "org_lumen",
+   "nombre": "Lumen Salud S.L.",
+   "plan": "enterprise",
+   "modalidad": "Despliegue privado",
+   "estado": "activa",
+   "cobro": "pagado",
+   "peticionesMes": null,
+   "cuota": null,
+   "ingresoMes": 4200,
+   "socio": null,
+   "alta": "2026-07-15",
+   "pais": "España",
+   "ticketsAbiertos": 0,
+   "contrato": "ENT-2026-003",
+   "socioId": null
+  },
+  {
+   "id": "org_nexo",
+   "nombre": "Nexo Analytics S.L.",
+   "plan": "pro",
+   "modalidad": null,
+   "estado": "activa",
+   "cobro": "pagado",
+   "peticionesMes": 412380,
+   "cuota": 500000,
+   "ingresoMes": 49,
+   "socio": "Agencia Autómata (propuesta)",
+   "alta": "2026-03-04",
+   "pais": "España",
+   "ticketsAbiertos": 2,
+   "contrato": null,
+   "socioId": "soc_automata"
+  },
+  {
+   "id": "org_kuro",
+   "nombre": "Kuro Labs S.L.",
+   "plan": "pro",
+   "modalidad": null,
+   "estado": "tope de excedente alcanzado",
+   "cobro": "pagado",
+   "peticionesMes": 800000,
+   "cuota": 500000,
+   "ingresoMes": 79,
+   "socio": null,
+   "alta": "2026-02-11",
+   "pais": "España",
+   "ticketsAbiertos": 1,
+   "contrato": null,
+   "socioId": null
+  },
+  {
+   "id": "org_bitacora",
+   "nombre": "Bitácora Legal S.L.P.",
+   "plan": "pro",
+   "modalidad": null,
+   "estado": "activa",
+   "cobro": "pagado",
+   "peticionesMes": 128930,
+   "cuota": 500000,
+   "ingresoMes": 49,
+   "socio": null,
+   "alta": "2026-05-28",
+   "pais": "España",
+   "ticketsAbiertos": 1,
+   "contrato": null,
+   "socioId": null
+  },
+  {
+   "id": "org_helix",
+   "nombre": "Helix Logística S.A.",
+   "plan": "pro",
+   "modalidad": null,
+   "estado": "activa",
+   "cobro": "fallido",
+   "peticionesMes": 356020,
+   "cuota": 500000,
+   "ingresoMes": 49,
+   "socio": null,
+   "alta": "2026-04-03",
+   "pais": "Portugal",
+   "ticketsAbiertos": 1,
+   "contrato": null,
+   "socioId": null
+  },
+  {
+   "id": "org_aula",
+   "nombre": "Aula Viva EdTech",
+   "plan": "pro",
+   "modalidad": null,
+   "estado": "activa",
+   "cobro": "pagado",
+   "peticionesMes": 97410,
+   "cuota": 500000,
+   "ingresoMes": 49,
+   "socio": "n8n (propuesta)",
+   "alta": "2026-09-09",
+   "pais": "España",
+   "ticketsAbiertos": 0,
+   "contrato": null,
+   "socioId": "soc_n8n"
+  },
+  {
+   "id": "org_marea",
+   "nombre": "Marea Studio",
+   "plan": "pro",
+   "modalidad": null,
+   "estado": "activa",
+   "cobro": "pendiente",
+   "peticionesMes": 41220,
+   "cuota": 500000,
+   "ingresoMes": 49,
+   "socio": null,
+   "alta": "2026-10-02",
+   "pais": "España",
+   "ticketsAbiertos": 0,
+   "contrato": null,
+   "socioId": null
+  },
+  {
+   "id": "org_ondas",
+   "nombre": "Ondas Media Coop.",
+   "plan": "pro",
+   "modalidad": null,
+   "estado": "de baja",
+   "cobro": "pagado",
+   "peticionesMes": 0,
+   "cuota": 500000,
+   "ingresoMes": 0,
+   "socio": null,
+   "alta": "2026-03-20",
+   "pais": "España",
+   "ticketsAbiertos": 0,
+   "contrato": null,
+   "baja": "2026-09-30",
+   "socioId": null
+  },
+  {
+   "id": "org_pmartin",
+   "nombre": "Pablo Martín (cuenta personal)",
+   "plan": "gratis",
+   "modalidad": null,
+   "estado": "activa",
+   "cobro": "—",
+   "peticionesMes": 8640,
+   "cuota": 10000,
+   "ingresoMes": 0,
+   "socio": null,
+   "alta": "2026-08-19",
+   "pais": "España",
+   "ticketsAbiertos": 0,
+   "contrato": null,
+   "socioId": null
+  },
+  {
+   "id": "org_lfernandez",
+   "nombre": "Lucía Fernández (cuenta personal)",
+   "plan": "gratis",
+   "modalidad": null,
+   "estado": "cuota agotada",
+   "cobro": "—",
+   "peticionesMes": 10000,
+   "cuota": 10000,
+   "ingresoMes": 0,
+   "socio": null,
+   "alta": "2026-07-02",
+   "pais": "España",
+   "ticketsAbiertos": 0,
+   "contrato": null,
+   "socioId": null
+  },
+  {
+   "id": "org_upm",
+   "nombre": "Club de IA · Universidad",
+   "plan": "gratis",
+   "modalidad": null,
+   "estado": "activa",
+   "cobro": "—",
+   "peticionesMes": 3120,
+   "cuota": 10000,
+   "ingresoMes": 0,
+   "socio": null,
+   "alta": "2026-10-05",
+   "pais": "España",
+   "ticketsAbiertos": 0,
+   "contrato": null,
+   "socioId": null
+  },
+  {
+   "id": "org_agro",
+   "nombre": "Agrotech Ebro S.L.",
+   "plan": "gratis",
+   "modalidad": null,
+   "estado": "activa",
+   "cobro": "—",
+   "peticionesMes": 7410,
+   "cuota": 10000,
+   "ingresoMes": 0,
+   "socio": "Agencia Autómata (propuesta)",
+   "alta": "2026-09-26",
+   "pais": "España",
+   "ticketsAbiertos": 0,
+   "contrato": null,
+   "socioId": "soc_automata"
+  }
+ ],
+ "incidenciasTecnicas": [
+  {
+   "id": "IT-0057",
+   "fecha": "2026-10-19T12:31:00",
+   "origen": "Ticket TCK-1098",
+   "componente": "Gateway (AP-03) · streaming de Anthropic",
+   "gravedad": "media",
+   "causa": "El buffer de revisión de herramientas en streaming no se liberaba hasta el primer bloque completo.",
+   "acciones": [
+    "Diagnóstico con trazas de la plataforma de observabilidad",
+    "Parche en v1.14.0",
+    "Despliegue gradual al 25 %"
+   ],
+   "clientesAfectados": 14,
+   "notificadaReguladores": false,
+   "clientesAvisados": false,
+   "estado": "en curso"
+  },
+  {
+   "id": "IT-0055",
+   "fecha": "2026-10-17T03:02:00",
+   "origen": "Alarma de la plataforma de observabilidad (contadores)",
+   "componente": "Motor de presupuestos (AP-04)",
+   "gravedad": "alta",
+   "causa": "Failover de ElastiCache: los contadores tardaron 18 min en reconstruirse y las claves con política «bloquear» devolvieron 503 (DEC-08).",
+   "acciones": [
+    "Failover manual",
+    "Reconstrucción de contadores desde la base de datos (BP-19)",
+    "Aviso a los 41 clientes afectados",
+    "Parche v1.13.2"
+   ],
+   "clientesAfectados": 41,
+   "notificadaReguladores": false,
+   "clientesAvisados": true,
+   "estado": "resuelta"
+  },
+  {
+   "id": "IT-0051",
+   "fecha": "2026-10-03T15:44:00",
+   "origen": "Alarma de la plataforma de observabilidad (latencia)",
+   "componente": "Proveedor de IA · OpenAI",
+   "gravedad": "baja",
+   "causa": "Degradación del proveedor; el Gateway devolvió sus errores tal cual (502 y 504).",
+   "acciones": [
+    "Seguimiento del estado del proveedor"
+   ],
+   "clientesAfectados": 0,
+   "notificadaReguladores": false,
+   "clientesAvisados": false,
+   "estado": "resuelta"
+  }
+ ],
+ "modelos": [
+  {
+   "id": "m_gpt41",
+   "proveedor": "OpenAI",
+   "modelo": "gpt-4.1",
+   "vigencia": "2026-04-01",
+   "estado": "activo",
+   "precios": {
+    "entrada": 1.84,
+    "salida": 7.36,
+    "razonamiento": null,
+    "cache": 0.46
+   },
+   "recargos": "Ventana > 200k tokens: ×2 en entrada",
+   "herramientas": [
+    {
+     "nombre": "web_search",
+     "tarifa": "9,20 € / 1.000 usos",
+     "entradaEstimada": 8000
+    },
+    {
+     "nombre": "code_execution",
+     "tarifa": "0,03 € / sesión",
+     "entradaEstimada": 1500
+    },
+    {
+     "nombre": "file_search",
+     "tarifa": "2,30 € / 1.000 usos",
+     "entradaEstimada": 4000
+    }
+   ],
+   "opciones": [
+    {
+     "nombre": "temperature",
+     "admitida": true,
+     "efecto": "Sin efecto en el precio"
+    },
+    {
+     "nombre": "max_output_tokens",
+     "admitida": true,
+     "efecto": "Acota el peor caso de la reserva"
+    },
+    {
+     "nombre": "service_tier=flex",
+     "admitida": true,
+     "efecto": "−50 % en todos los tokens"
+    },
+    {
+     "nombre": "service_tier=priority",
+     "admitida": false,
+     "efecto": "Precio no registrado: no se admite (OF-04)"
+    }
+   ]
+  },
+  {
+   "id": "m_gpt41mini",
+   "proveedor": "OpenAI",
+   "modelo": "gpt-4.1-mini",
+   "vigencia": "2026-04-01",
+   "estado": "activo",
+   "precios": {
+    "entrada": 0.37,
+    "salida": 1.47,
+    "razonamiento": null,
+    "cache": 0.09
+   },
+   "recargos": null,
+   "herramientas": [
+    {
+     "nombre": "web_search",
+     "tarifa": "9,20 € / 1.000 usos",
+     "entradaEstimada": 8000
+    }
+   ],
+   "opciones": [
+    {
+     "nombre": "temperature",
+     "admitida": true,
+     "efecto": "Sin efecto en el precio"
+    },
+    {
+     "nombre": "max_output_tokens",
+     "admitida": true,
+     "efecto": "Acota el peor caso de la reserva"
+    }
+   ]
+  },
+  {
+   "id": "m_o4mini",
+   "proveedor": "OpenAI",
+   "modelo": "o4-mini",
+   "vigencia": "2026-04-01",
+   "estado": "activo",
+   "precios": {
+    "entrada": 1.01,
+    "salida": 4.05,
+    "razonamiento": 4.05,
+    "cache": 0.25
+   },
+   "recargos": null,
+   "herramientas": [
+    {
+     "nombre": "code_execution",
+     "tarifa": "0,03 € / sesión",
+     "entradaEstimada": 1500
+    }
+   ],
+   "opciones": [
+    {
+     "nombre": "reasoning_effort",
+     "admitida": true,
+     "efecto": "Cambia los tokens de razonamiento estimados"
+    },
+    {
+     "nombre": "max_output_tokens",
+     "admitida": true,
+     "efecto": "Acota el peor caso de la reserva"
+    }
+   ]
+  },
+  {
+   "id": "m_gpt4o",
+   "proveedor": "OpenAI",
+   "modelo": "gpt-4o",
+   "vigencia": "2025-11-01",
+   "estado": "retirado",
+   "precios": {
+    "entrada": 2.3,
+    "salida": 9.2,
+    "razonamiento": null,
+    "cache": 1.15
+   },
+   "recargos": null,
+   "herramientas": [],
+   "opciones": []
+  },
+  {
+   "id": "m_sonnet45",
+   "proveedor": "Anthropic",
+   "modelo": "claude-sonnet-4-5",
+   "vigencia": "2026-05-15",
+   "estado": "activo",
+   "precios": {
+    "entrada": 2.76,
+    "salida": 13.8,
+    "razonamiento": 13.8,
+    "cache": 0.28
+   },
+   "recargos": "Contexto > 200k tokens: ×2 entrada, ×1,5 salida",
+   "herramientas": [
+    {
+     "nombre": "web_search",
+     "tarifa": "9,20 € / 1.000 usos",
+     "entradaEstimada": 10000
+    },
+    {
+     "nombre": "code_execution",
+     "tarifa": "0,05 € / hora",
+     "entradaEstimada": 2000
+    }
+   ],
+   "opciones": [
+    {
+     "nombre": "thinking.budget_tokens",
+     "admitida": true,
+     "efecto": "Fija los tokens de razonamiento máximos"
+    },
+    {
+     "nombre": "cache_control",
+     "admitida": true,
+     "efecto": "Escritura en caché ×1,25 entrada"
+    },
+    {
+     "nombre": "mcp_servers (conector remoto)",
+     "admitida": false,
+     "efecto": "Herramienta del proveedor denegada por defecto (DEC-10)"
+    }
+   ]
+  },
+  {
+   "id": "m_haiku45",
+   "proveedor": "Anthropic",
+   "modelo": "claude-haiku-4-5",
+   "vigencia": "2026-05-15",
+   "estado": "activo",
+   "precios": {
+    "entrada": 0.92,
+    "salida": 4.6,
+    "razonamiento": 4.6,
+    "cache": 0.09
+   },
+   "recargos": null,
+   "herramientas": [
+    {
+     "nombre": "web_search",
+     "tarifa": "9,20 € / 1.000 usos",
+     "entradaEstimada": 10000
+    }
+   ],
+   "opciones": [
+    {
+     "nombre": "cache_control",
+     "admitida": true,
+     "efecto": "Escritura en caché ×1,25 entrada"
+    }
+   ]
+  },
+  {
+   "id": "m_opus41",
+   "proveedor": "Anthropic",
+   "modelo": "claude-opus-4-1",
+   "vigencia": "2026-05-15",
+   "estado": "activo",
+   "precios": {
+    "entrada": 13.8,
+    "salida": 69.0,
+    "razonamiento": 69.0,
+    "cache": 1.38
+   },
+   "recargos": null,
+   "herramientas": [
+    {
+     "nombre": "web_search",
+     "tarifa": "9,20 € / 1.000 usos",
+     "entradaEstimada": 10000
+    }
+   ],
+   "opciones": [
+    {
+     "nombre": "thinking.budget_tokens",
+     "admitida": true,
+     "efecto": "Fija los tokens de razonamiento máximos"
+    }
+   ]
+  }
+ ],
+ "informes": [
+  {
+   "mes": "2026-10",
+   "estado": "en curso",
+   "nota": "Datos hasta el 21/10. Se cierra con BP-12 el 01/11.",
+   "ingresos": 15986,
+   "ingresosDesglose": {
+    "pro": 4851,
+    "excedentes": 435,
+    "enterprise": 10700
+   },
+   "clientesPorPlan": {
+    "gratis": 1352,
+    "pro": 99,
+    "enterprise": 2
+   },
+   "altas": {
+    "gratis": 211,
+    "pro": 7,
+    "enterprise": 0
+   },
+   "bajas": {
+    "gratis": 64,
+    "pro": 2,
+    "enterprise": 0
+   },
+   "peticionesFacturables": 61240000,
+   "incidentes": {
+    "bucle": 812,
+    "consumo_anomalo": 296,
+    "presupuesto_agotado": 1904,
+    "herramienta_denegada": 640
+   },
+   "ahorroEstimadoClientes": {
+    "min": 38200,
+    "max": 61900
+   },
+   "tickets": {
+    "abiertos": 31,
+    "cerrados": 118,
+    "escalados": 6,
+    "primeraRespuestaHoras": 2.4
+   },
+   "costesPropios": {
+    "infraestructura": 4150,
+    "planGratuito": 1010,
+    "comisionesSocios": 0,
+    "plataformas": 520
+   },
+   "disponibilidad": 99.95,
+   "kpis": {
+    "costeMedioSesion": 0.31,
+    "tasaBloqueosSeguridad": 1.9,
+    "latenciaP95": 18,
+    "ahorroModeloSustituto": 46.2,
+    "roiMedioClientes": 7.4
+   },
+   "cambiosPlan": {
+    "gratisAPro": 6,
+    "proAGratis": 1,
+    "proAEnterprise": 0
+   }
+  },
+  {
+   "mes": "2026-09",
+   "estado": "borrador",
+   "nota": "Preparado por Finanzas el 03/10 · pendiente de presentar en el comité de Dirección del 23/10.",
+   "ingresos": 16019,
+   "ingresosDesglose": {
+    "pro": 4704,
+    "excedentes": 615,
+    "enterprise": 10700
+   },
+   "clientesPorPlan": {
+    "gratis": 1205,
+    "pro": 96,
+    "enterprise": 2
+   },
+   "altas": {
+    "gratis": 274,
+    "pro": 11,
+    "enterprise": 0
+   },
+   "bajas": {
+    "gratis": 71,
+    "pro": 3,
+    "enterprise": 0
+   },
+   "peticionesFacturables": 84910000,
+   "incidentes": {
+    "bucle": 1120,
+    "consumo_anomalo": 402,
+    "presupuesto_agotado": 2615,
+    "herramienta_denegada": 981
+   },
+   "ahorroEstimadoClientes": {
+    "min": 51800,
+    "max": 84300
+   },
+   "tickets": {
+    "abiertos": 22,
+    "cerrados": 164,
+    "escalados": 9,
+    "primeraRespuestaHoras": 2.9
+   },
+   "costesPropios": {
+    "infraestructura": 5850,
+    "planGratuito": 1420,
+    "comisionesSocios": 0,
+    "plataformas": 690
+   },
+   "disponibilidad": 99.91,
+   "kpis": {
+    "costeMedioSesion": 0.34,
+    "tasaBloqueosSeguridad": 2.1,
+    "latenciaP95": 20,
+    "ahorroModeloSustituto": 41.8,
+    "roiMedioClientes": 6.9
+   },
+   "cambiosPlan": {
+    "gratisAPro": 9,
+    "proAGratis": 2,
+    "proAEnterprise": 0
+   }
+  },
+  {
+   "mes": "2026-08",
+   "estado": "presentado",
+   "nota": "Presentado a Dirección el 02/09.",
+   "ingresos": 15188,
+   "ingresosDesglose": {
+    "pro": 4263,
+    "excedentes": 525,
+    "enterprise": 10400
+   },
+   "clientesPorPlan": {
+    "gratis": 1002,
+    "pro": 87,
+    "enterprise": 2
+   },
+   "altas": {
+    "gratis": 238,
+    "pro": 9,
+    "enterprise": 1
+   },
+   "bajas": {
+    "gratis": 58,
+    "pro": 2,
+    "enterprise": 0
+   },
+   "peticionesFacturables": 72300000,
+   "incidentes": {
+    "bucle": 990,
+    "consumo_anomalo": 351,
+    "presupuesto_agotado": 2210,
+    "herramienta_denegada": 870
+   },
+   "ahorroEstimadoClientes": {
+    "min": 44100,
+    "max": 70500
+   },
+   "tickets": {
+    "abiertos": 19,
+    "cerrados": 141,
+    "escalados": 7,
+    "primeraRespuestaHoras": 3.3
+   },
+   "costesPropios": {
+    "infraestructura": 5420,
+    "planGratuito": 1210,
+    "comisionesSocios": 0,
+    "plataformas": 640
+   },
+   "disponibilidad": 99.97,
+   "kpis": {
+    "costeMedioSesion": 0.36,
+    "tasaBloqueosSeguridad": 2.3,
+    "latenciaP95": 21,
+    "ahorroModeloSustituto": 38.5,
+    "roiMedioClientes": 6.1
+   },
+   "cambiosPlan": {
+    "gratisAPro": 7,
+    "proAGratis": 1,
+    "proAEnterprise": 1
+   }
+  },
+  {
+   "mes": "2026-07",
+   "estado": "presentado",
+   "nota": "Presentado a Dirección el 04/08.",
+   "ingresos": 9897,
+   "ingresosDesglose": {
+    "pro": 3822,
+    "excedentes": 375,
+    "enterprise": 5700
+   },
+   "clientesPorPlan": {
+    "gratis": 822,
+    "pro": 78,
+    "enterprise": 1
+   },
+   "altas": {
+    "gratis": 196,
+    "pro": 8,
+    "enterprise": 1
+   },
+   "bajas": {
+    "gratis": 49,
+    "pro": 1,
+    "enterprise": 0
+   },
+   "peticionesFacturables": 58700000,
+   "incidentes": {
+    "bucle": 760,
+    "consumo_anomalo": 288,
+    "presupuesto_agotado": 1730,
+    "herramienta_denegada": 690
+   },
+   "ahorroEstimadoClientes": {
+    "min": 33900,
+    "max": 55200
+   },
+   "tickets": {
+    "abiertos": 17,
+    "cerrados": 120,
+    "escalados": 5,
+    "primeraRespuestaHoras": 3.8
+   },
+   "costesPropios": {
+    "infraestructura": 4980,
+    "planGratuito": 1030,
+    "comisionesSocios": 0,
+    "plataformas": 610
+   },
+   "disponibilidad": 99.88,
+   "kpis": {
+    "costeMedioSesion": 0.39,
+    "tasaBloqueosSeguridad": 2.6,
+    "latenciaP95": 24,
+    "ahorroModeloSustituto": 33.1,
+    "roiMedioClientes": 5.2
+   },
+   "cambiosPlan": {
+    "gratisAPro": 6,
+    "proAGratis": 0,
+    "proAEnterprise": 1
+   }
+  }
+ ],
+ "socios": [
+  {
+   "id": "soc_automata",
+   "nombre": "Agencia Autómata",
+   "tipo": "Agencia de automatización",
+   "estado": "propuesta",
+   "comision": 15,
+   "contacto": "Rubén Gallego",
+   "ultimoContacto": "2026-10-14",
+   "clientes": [
+    "org_nexo",
+    "org_agro"
+   ],
+   "nota": "Montan agentes para PYMES industriales. Piden material de formación y una cuenta de demo."
+  },
+  {
+   "id": "soc_n8n",
+   "nombre": "n8n",
+   "tipo": "Plataforma de automatización y de agentes",
+   "estado": "en conversación",
+   "comision": 0,
+   "contacto": "Equipo de partnerships",
+   "ultimoContacto": "2026-10-09",
+   "clientes": [
+    "org_aula"
+   ],
+   "nota": "Interés en una guía de integración oficial (nodo HTTP con base_url de Unburn)."
+  },
+  {
+   "id": "soc_langchain",
+   "nombre": "LangChain",
+   "tipo": "Plataforma de automatización y de agentes",
+   "estado": "propuesta",
+   "comision": 0,
+   "contacto": "Developer relations",
+   "ultimoContacto": "2026-09-30",
+   "clientes": [],
+   "nota": "Propuesta de ejemplo en su documentación de callbacks para enviar X-Unburn-Session."
+  },
+  {
+   "id": "soc_crewai",
+   "nombre": "CrewAI",
+   "tipo": "Plataforma de automatización y de agentes",
+   "estado": "propuesta",
+   "comision": 0,
+   "contacto": "Developer relations",
+   "ultimoContacto": "2026-09-18",
+   "clientes": [],
+   "nota": "Encaja con la detección de bucles entre agentes."
+  },
+  {
+   "id": "soc_aws",
+   "nombre": "AWS Marketplace",
+   "tipo": "Marketplace del proveedor de cloud",
+   "estado": "en conversación",
+   "comision": 3,
+   "contacto": "ISV Accelerate",
+   "ultimoContacto": "2026-10-17",
+   "clientes": [],
+   "nota": "Requisito: listing con contrato SaaS anual para Enterprise. La interfaz IF-32 solo existirá si se firma."
+  }
+ ],
+ "oportunidades": [
+  {
+   "id": "opp_101",
+   "empresa": "Aseguradora Atlántica S.A.",
+   "sector": "Seguros",
+   "etapa": "revision_seguridad",
+   "modalidad": "Nube confidencial",
+   "importeAnual": 72000,
+   "peticionesMes": 15000000,
+   "responsable": "e_javier",
+   "proximoPaso": "Entregar el cuestionario de seguridad (126 preguntas) y el SBOM",
+   "actualizado": "2026-10-20"
+  },
+  {
+   "id": "opp_102",
+   "empresa": "Hospital Universitario del Sur",
+   "sector": "Salud",
+   "etapa": "demo",
+   "modalidad": "Despliegue privado",
+   "importeAnual": 54000,
+   "peticionesMes": null,
+   "responsable": "e_javier",
+   "proximoPaso": "Demo con el CISO y el DPD",
+   "actualizado": "2026-10-18"
+  },
+  {
+   "id": "opp_103",
+   "empresa": "Caja Rural Digital",
+   "sector": "Banca",
+   "etapa": "negociacion",
+   "modalidad": "Nube confidencial",
+   "importeAnual": 96000,
+   "peticionesMes": 25000000,
+   "responsable": "e_javier",
+   "proximoPaso": "Legal revisa la cláusula de estrategia de salida (DORA)",
+   "actualizado": "2026-10-21",
+   "contrato": {
+    "numero": "ENT-2026-004",
+    "precio": 8000,
+    "peticionesIncluidas": 25000000,
+    "sla": "99,95 %",
+    "soporte": "Dedicado 24/7, respuesta en menos de 1 h",
+    "diasRetencion": 365,
+    "estrategiaSalida": "Exportación completa (IC-24) y 90 días de servicio en paralelo",
+    "modalidad": "Nube confidencial",
+    "fechaFirma": null
+   }
+  },
+  {
+   "id": "opp_104",
+   "empresa": "Grupo Logístico Mediterráneo",
+   "sector": "Logística",
+   "etapa": "prospeccion",
+   "modalidad": "Por decidir",
+   "importeAnual": 36000,
+   "peticionesMes": 8000000,
+   "responsable": "e_javier",
+   "proximoPaso": "Primera llamada; vienen del plan Pro (Helix Logística)",
+   "actualizado": "2026-10-16"
+  }
+ ],
+ "contratos": [
+  {
+   "numero": "ENT-2026-002",
+   "clienteId": "org_banco",
+   "cliente": "Banco Ibérico Digital S.A.",
+   "precio": 6500,
+   "peticionesIncluidas": 10000000,
+   "sla": "99,95 %",
+   "soporte": "Dedicado 24/7",
+   "diasRetencion": 365,
+   "estrategiaSalida": "Exportación completa y 60 días en paralelo",
+   "modalidad": "Nube confidencial",
+   "fechaFirma": "2026-05-28"
+  },
+  {
+   "numero": "ENT-2026-003",
+   "clienteId": "org_lumen",
+   "cliente": "Lumen Salud S.L.",
+   "precio": 4200,
+   "peticionesIncluidas": null,
+   "sla": "Según la instalación del cliente",
+   "soporte": "Dedicado en horario laboral",
+   "diasRetencion": 730,
+   "estrategiaSalida": "Licencia de lectura del registro sin caducidad",
+   "modalidad": "Despliegue privado (licencia anual)",
+   "fechaFirma": "2026-07-10"
+  }
+ ],
+ "proveedores": [
+  {
+   "id": "prov_aws",
+   "nombre": "Amazon Web Services",
+   "servicio": "Proveedor de cloud: EKS, RDS, ElastiCache, SQS/SNS, S3 Object Lock, KMS, Cognito, CloudWatch y SES (eu-west-1)",
+   "condiciones": "Pago por uso · Business Support · contrato de encargo y cláusulas UE firmados",
+   "costeMensual": 4150,
+   "trataDatos": true,
+   "estado": "activo",
+   "revision": "2026-09-15",
+   "responsable": "Finanzas y Legal"
+  },
+  {
+   "id": "prov_stripe",
+   "nombre": "Stripe",
+   "servicio": "Plataforma de pagos: cobro de suscripciones y excedentes (AP-14)",
+   "condiciones": "1,5 % + 0,25 € por cobro en la UE · los datos de tarjeta no llegan a Unburn",
+   "costeMensual": 310,
+   "trataDatos": true,
+   "estado": "activo",
+   "revision": "2026-08-01",
+   "responsable": "Finanzas"
+  },
+  {
+   "id": "prov_github",
+   "nombre": "GitHub",
+   "servicio": "Plataforma de desarrollo: código, GitHub Actions, firma de versiones y SBOM (AP-15)",
+   "condiciones": "Plan Team · 9 asientos",
+   "costeMensual": 210,
+   "trataDatos": false,
+   "estado": "activo",
+   "revision": "2026-07-20",
+   "responsable": "Ingeniería y Finanzas"
+  }
+ ],
+ "versiones": [
+  {
+   "numero": "v1.15.0",
+   "fecha": "2026-10-21T15:40:00",
+   "cambios": "Panel: previsión del gasto a final de mes y recomendaciones de ajuste (OF-16, OF-17)",
+   "revisionLegal": "Pendiente: ¿nuevas obligaciones por las recomendaciones? (RGPD, Reglamento Europeo de IA)",
+   "pruebas": "1.871 pruebas superadas",
+   "firma": "Firmada (cosign)",
+   "sbom": "415 componentes",
+   "trafico": 0,
+   "estado": "en pruebas",
+   "indicadores": {
+    "latenciaP95": 19,
+    "errores": 0.01
+   },
+   "aprobadaPor": null,
+   "revisionLegalHecha": false
+  },
+  {
+   "numero": "v1.14.0",
+   "fecha": "2026-10-21T10:00:00",
+   "cambios": "Escudo MCP: revisión de herramientas en streaming sin esperar al bloque completo (corrige IT-0057)",
+   "revisionLegal": "Sin obligaciones nuevas",
+   "pruebas": "1.842 pruebas superadas",
+   "firma": "Firmada (cosign)",
+   "sbom": "412 componentes",
+   "trafico": 25,
+   "estado": "en despliegue gradual",
+   "indicadores": {
+    "latenciaP95": 19,
+    "errores": 0.02
+   },
+   "aprobadaPor": "Sergio Campos",
+   "revisionLegalHecha": true
+  },
+  {
+   "numero": "v1.13.2",
+   "fecha": "2026-10-17T09:30:00",
+   "cambios": "Motor de presupuestos: reconstrucción de contadores tras un failover (IT-0055)",
+   "revisionLegal": "Sin obligaciones nuevas",
+   "pruebas": "1.820 pruebas superadas",
+   "firma": "Firmada (cosign)",
+   "sbom": "409 componentes",
+   "trafico": 100,
+   "estado": "publicada",
+   "indicadores": {
+    "latenciaP95": 21,
+    "errores": 0.03
+   },
+   "aprobadaPor": "Sergio Campos",
+   "revisionLegalHecha": true
+  },
+  {
+   "numero": "v1.13.1",
+   "fecha": "2026-10-15T11:00:00",
+   "cambios": "Catálogo: opción service_tier=flex en OpenAI",
+   "revisionLegal": "Sin obligaciones nuevas",
+   "pruebas": "1.811 pruebas superadas",
+   "firma": "Firmada (cosign)",
+   "sbom": "409 componentes",
+   "trafico": 0,
+   "estado": "revertida",
+   "indicadores": {
+    "latenciaP95": 63,
+    "errores": 0.41
+   },
+   "aprobadaPor": "Sergio Campos",
+   "revisionLegalHecha": true
+  },
+  {
+   "numero": "v1.13.0",
+   "fecha": "2026-10-08T10:00:00",
+   "cambios": "Exportación del registro en CSV con la versión de configuración",
+   "revisionLegal": "Revisada (Data Act: portabilidad)",
+   "pruebas": "1.796 pruebas superadas",
+   "firma": "Firmada (cosign)",
+   "sbom": "408 componentes",
+   "trafico": 100,
+   "estado": "publicada",
+   "indicadores": {
+    "latenciaP95": 20,
+    "errores": 0.02
+   },
+   "aprobadaPor": "Sergio Campos",
+   "revisionLegalHecha": true
+  }
+ ],
+ "plataforma": {
+  "disponibilidad30d": 99.94,
+  "latenciaAnadidaP95": 19,
+  "metaLatencia": 50,
+  "metaDisponibilidad": 99.9,
+  "region": "eu-west-1 (Irlanda) · 2 zonas de disponibilidad",
+  "colaAuditoria": 118,
+  "contadores": "Sincronizados",
+  "componentes": [
+   {
+    "nombre": "Gateway (AP-03)",
+    "estado": "operativo"
+   },
+   {
+    "nombre": "Motor de presupuestos (AP-04)",
+    "estado": "operativo"
+   },
+   {
+    "nombre": "Grafo de autorización (AP-05)",
+    "estado": "operativo"
+   },
+   {
+    "nombre": "Auditoría (AP-07)",
+    "estado": "operativo"
+   },
+   {
+    "nombre": "Diagnóstico causal (AP-09)",
+    "estado": "operativo"
+   },
+   {
+    "nombre": "Alertas (AP-10)",
+    "estado": "operativo"
+   },
+   {
+    "nombre": "Facturación (AP-11)",
+    "estado": "operativo"
+   },
+   {
+    "nombre": "Streaming de Anthropic",
+    "estado": "degradado"
+   }
+  ]
+ }
+}

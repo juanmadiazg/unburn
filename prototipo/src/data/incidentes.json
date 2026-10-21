@@ -1,0 +1,277 @@
+[
+ {
+  "id": "inc_R4t8Wm",
+  "orgId": "org_nexo",
+  "tipo": "bucle",
+  "subtipo": "ping_pong",
+  "titulo": "Bucle entre agente-redactor y agente-investigador",
+  "fecha": "2026-10-21T16:36:48",
+  "ultimaActividad": "2026-10-21T16:36:48",
+  "claveId": "kv_research",
+  "sesionId": "ses_7Hq2Lw",
+  "agente": "agente-redactor",
+  "parteAfectada": "Sesión ses_7Hq2Lw (clave prod-equipo-research)",
+  "respuestaAplicada": "Bloqueo (422) de la llamada c15. La política de bucles de la clave es «bloqueo».",
+  "estado": "abierto",
+  "costeIncidente": 17.07,
+  "cotaSuperior": 18.77,
+  "ahorro": {
+   "min": 96,
+   "max": 158,
+   "hipotesis": "Si Unburn no hubiera bloqueado la llamada c15, el intercambio habría seguido al ritmo observado (1 llamada cada 75 s, +0,33 € por llamada porque el historial crece) hasta que alguien lo detectara a mano. Se toma como referencia el tiempo medio de reacción de Nexo fuera de horario: entre 2 y 3 horas."
+  },
+  "costePrevisto": null,
+  "causaRaiz": {
+   "llamadaId": "c07",
+   "agente": "agente-redactor",
+   "explicacion": "En c07, agente-redactor encargó a agente-investigador confirmar la cifra «cuota de mercado 2025» antes de cerrar el informe. Esa cifra no aparece en ninguna fuente, así que el investigador devolvió siempre el mismo resultado («no confirmado») y el redactor volvió a encargarlo. Las 8 llamadas siguientes tienen la misma huella (a91f…c7e0).",
+   "recomendacion": "Limitar a 2 los reintentos de verificación en el prompt del redactor, o quitar la delegación redactor → investigador y dejar que solo el orquestador encargue verificaciones."
+  },
+  "huellas": [
+   "a91f…c7e0"
+  ],
+  "llamadasImplicadas": [
+   "c07",
+   "c08",
+   "c09",
+   "c10",
+   "c11",
+   "c12",
+   "c13",
+   "c14",
+   "c15"
+  ],
+  "endurecidoHasta": null,
+  "ocurrencias": 1
+ },
+ {
+  "id": "inc_K2p7Qa",
+  "orgId": "org_nexo",
+  "tipo": "consumo_anomalo",
+  "subtipo": "usuario_final",
+  "titulo": "Consumo anómalo de un usuario final en el chatbot",
+  "fecha": "2026-10-21T10:23:31",
+  "ultimaActividad": "2026-10-21T10:44:09",
+  "claveId": "kv_chatbot",
+  "sesionId": "ses_A2n4Vb",
+  "agente": "agente-soporte",
+  "parteAfectada": "Usuario final usr_7f3a… (seudónimo) en prod-chatbot-soporte",
+  "respuestaAplicada": "Respuesta por grados: aviso (6,2×) → modelo económico gpt-4.1-mini (9,8×) → freno 429 (14,1×). Límites endurecidos 24 h solo para ese usuario final; el resto del chatbot sigue funcionando.",
+  "estado": "abierto",
+  "costeIncidente": 0.77,
+  "cotaSuperior": null,
+  "ahorro": {
+   "min": 41,
+   "max": 65,
+   "hipotesis": "Peticiones de ~32.000 tokens de entrada cada 30 s, como las observadas antes del freno, mantenidas durante el resto de la jornada laboral (6 h). Coincide con el patrón de un ataque para hacer gastar dinero (denial of wallet)."
+  },
+  "costePrevisto": null,
+  "causaRaiz": null,
+  "lineaBase": {
+   "eurosMinuto": 0.031,
+   "observado": 0.437,
+   "factor": 14.1
+  },
+  "huellas": [
+   "1f00…aa31",
+   "2a7e…f113",
+   "2f40…91cb"
+  ],
+  "llamadasImplicadas": [
+   "c03",
+   "c04",
+   "c05",
+   "c06",
+   "c07"
+  ],
+  "endurecidoHasta": "2026-10-22T10:25:02",
+  "ocurrencias": 5
+ },
+ {
+  "id": "inc_D9x3Lb",
+  "orgId": "org_nexo",
+  "tipo": "presupuesto_agotado",
+  "subtipo": "diario_clave",
+  "titulo": "Presupuesto diario agotado en equipo-datos",
+  "fecha": "2026-10-21T13:58:12",
+  "ultimaActividad": "2026-10-21T16:41:00",
+  "claveId": "kv_datos",
+  "sesionId": null,
+  "agente": "agente-sql",
+  "parteAfectada": "Clave equipo-datos (presupuesto diario de 50 €)",
+  "respuestaAplicada": "Corte por límite duro: 37 peticiones rechazadas con 402 desde las 13:58. El resto de claves sigue funcionando.",
+  "estado": "abierto",
+  "costeIncidente": 50.0,
+  "cotaSuperior": null,
+  "ahorro": {
+   "min": 18,
+   "max": 26,
+   "hipotesis": "Las 37 peticiones rechazadas, al coste medio de las últimas 2 horas de esta clave (0,49–0,70 € por petición). Es gasto que superaba el límite fijado por el propio cliente."
+  },
+  "costePrevisto": null,
+  "causaRaiz": null,
+  "huellas": [],
+  "llamadasImplicadas": [],
+  "endurecidoHasta": null,
+  "ocurrencias": 37
+ },
+ {
+  "id": "inc_M5c1Ve",
+  "orgId": "org_nexo",
+  "tipo": "herramienta_denegada",
+  "subtipo": "respuesta_bloqueada",
+  "titulo": "agente-soporte pidió consultar_bd_clientes",
+  "fecha": "2026-10-21T11:48:37",
+  "ultimaActividad": "2026-10-21T11:48:37",
+  "claveId": "kv_chatbot",
+  "sesionId": "ses_Qm81Zt",
+  "agente": "agente-soporte",
+  "parteAfectada": "Llamada c03 de la sesión ses_Qm81Zt",
+  "respuestaAplicada": "Respuesta del modelo bloqueada (403) en modo protección: la herramienta no está permitida para este agente.",
+  "estado": "abierto",
+  "costeIncidente": 0.05,
+  "cotaSuperior": null,
+  "ahorro": null,
+  "costePrevisto": null,
+  "causaRaiz": null,
+  "nota": "Después del bloqueo, agente-soporte encargó la misma consulta a agente-sql (c04), que sí la tiene permitida. Es el camino indirecto CI-01 que avisa el grafo de autorización.",
+  "huellas": [
+   "c4e8…5b02"
+  ],
+  "llamadasImplicadas": [
+   "c03",
+   "c04"
+  ],
+  "endurecidoHasta": null,
+  "ocurrencias": 1
+ },
+ {
+  "id": "inc_T8n4Hs",
+  "orgId": "org_nexo",
+  "tipo": "bucle",
+  "subtipo": "limites_tarea",
+  "titulo": "Tarea de staging superó su límite de llamadas",
+  "fecha": "2026-10-18T19:04:00",
+  "ultimaActividad": "2026-10-18T19:40:00",
+  "claveId": "kv_staging",
+  "sesionId": null,
+  "agente": null,
+  "parteAfectada": "Sesión ses_Lr55Ue (clave staging)",
+  "respuestaAplicada": "Solo aviso: la política de bucles de la clave staging es «aviso». Las respuestas se marcaron.",
+  "estado": "cerrado",
+  "revisadoPor": "Iván Ortega",
+  "revisadoEl": "2026-10-19T09:12:00",
+  "costeIncidente": 6.4,
+  "cotaSuperior": 7.1,
+  "ahorro": null,
+  "costePrevisto": {
+   "valor": 34,
+   "hipotesis": "Al ritmo observado (11,30 € por hora) durante las 3 horas que quedaban hasta el fin del job nocturno."
+  },
+  "causaRaiz": {
+   "llamadaId": "c03",
+   "agente": "(sin declarar)",
+   "explicacion": "Un test de integración relanzaba la tarea completa cada vez que fallaba una aserción, sin límite de reintentos.",
+   "recomendacion": "Añadir un máximo de reintentos al test."
+  },
+  "huellas": [
+   "44d0…1e92"
+  ],
+  "llamadasImplicadas": [],
+  "endurecidoHasta": null,
+  "ocurrencias": 1
+ },
+ {
+  "id": "inc_B3w6Jd",
+  "orgId": "org_nexo",
+  "tipo": "consumo_anomalo",
+  "subtipo": "clave",
+  "titulo": "Pico de consumo en prod-equipo-research",
+  "fecha": "2026-10-16T12:10:00",
+  "ultimaActividad": "2026-10-16T12:25:00",
+  "claveId": "kv_research",
+  "sesionId": null,
+  "agente": "agente-investigador",
+  "parteAfectada": "Clave prod-equipo-research",
+  "respuestaAplicada": "Aviso (3,4× la línea base). No se aplicó freno.",
+  "estado": "cerrado",
+  "revisadoPor": "Laura Gómez",
+  "revisadoEl": "2026-10-16T13:02:00",
+  "costeIncidente": 12.3,
+  "cotaSuperior": null,
+  "ahorro": null,
+  "costePrevisto": {
+   "valor": 22,
+   "hipotesis": "Pico mantenido 1 hora más al ritmo observado."
+  },
+  "causaRaiz": null,
+  "huellas": [],
+  "llamadasImplicadas": [],
+  "endurecidoHasta": null,
+  "ocurrencias": 1
+ },
+ {
+  "id": "inc_P7e2Gx",
+  "orgId": "org_pmartin",
+  "tipo": "bucle",
+  "subtipo": "repeticion",
+  "titulo": "Posible bucle en proyecto-tfg",
+  "fecha": "2026-10-15T23:03:31",
+  "ultimaActividad": "2026-10-15T23:09:12",
+  "claveId": "kv_tfg",
+  "sesionId": "ses_pT01",
+  "agente": null,
+  "parteAfectada": "Sesión ses_pT01 (clave proyecto-tfg)",
+  "respuestaAplicada": "Solo aviso: la política de bucles de la clave es «aviso».",
+  "estado": "abierto",
+  "costeIncidente": 0.08,
+  "cotaSuperior": null,
+  "ahorro": null,
+  "costePrevisto": {
+   "valor": 0.9,
+   "hipotesis": "Al ritmo observado durante 2 horas más."
+  },
+  "causaRaiz": null,
+  "huellas": [
+   "5e2d…c001"
+  ],
+  "llamadasImplicadas": [
+   "c03",
+   "c04",
+   "c05",
+   "c06"
+  ],
+  "endurecidoHasta": null,
+  "ocurrencias": 1
+ },
+ {
+  "id": "inc_F1z9Nk",
+  "orgId": "org_pmartin",
+  "tipo": "presupuesto_agotado",
+  "subtipo": "diario_clave",
+  "titulo": "Presupuesto diario agotado en bot-telegram",
+  "fecha": "2026-10-09T21:15:00",
+  "ultimaActividad": "2026-10-09T23:50:00",
+  "claveId": "kv_telegram",
+  "sesionId": null,
+  "agente": null,
+  "parteAfectada": "Clave bot-telegram (presupuesto diario de 1,50 €)",
+  "respuestaAplicada": "Corte por límite duro: 212 peticiones rechazadas con 402.",
+  "estado": "cerrado",
+  "revisadoPor": "Pablo Martín",
+  "revisadoEl": "2026-10-10T08:30:00",
+  "costeIncidente": 1.5,
+  "cotaSuperior": null,
+  "ahorro": {
+   "min": 1.9,
+   "max": 3.1,
+   "hipotesis": "Las 212 peticiones rechazadas al coste medio de esa tarde."
+  },
+  "costePrevisto": null,
+  "causaRaiz": null,
+  "huellas": [],
+  "llamadasImplicadas": [],
+  "endurecidoHasta": null,
+  "ocurrencias": 1
+ }
+]

@@ -1,0 +1,32 @@
+{
+  "presupuestos": [
+    { "id": "pre_org_mes", "orgId": "org_nexo", "ambito": "organizacion", "claveId": null, "periodo": "mensual", "limiteBlando": 1600, "limiteDuro": 2000, "gastado": 1223.83, "reservado": 3.85 },
+    { "id": "pre_org_dia", "orgId": "org_nexo", "ambito": "organizacion", "claveId": null, "periodo": "diario", "limiteBlando": 100, "limiteDuro": 140, "gastado": 87.68, "reservado": 1.10 },
+    { "id": "pre_research_mes", "orgId": "org_nexo", "ambito": "clave", "claveId": "kv_research", "periodo": "mensual", "limiteBlando": 600, "limiteDuro": 750, "gastado": 512.40, "reservado": 2.40 },
+    { "id": "pre_chatbot_dia", "orgId": "org_nexo", "ambito": "clave", "claveId": "kv_chatbot", "periodo": "diario", "limiteBlando": 25, "limiteDuro": 30, "gastado": 9.80, "reservado": 0.12 },
+    { "id": "pre_fact_mes", "orgId": "org_nexo", "ambito": "clave", "claveId": "kv_facturacion", "periodo": "mensual", "limiteBlando": 200, "limiteDuro": 250, "gastado": 96.70, "reservado": 0.35 },
+    { "id": "pre_datos_dia", "orgId": "org_nexo", "ambito": "clave", "claveId": "kv_datos", "periodo": "diario", "limiteBlando": 40, "limiteDuro": 50, "gastado": 50.00, "reservado": 0 },
+    { "id": "pre_staging_mes", "orgId": "org_nexo", "ambito": "clave", "claveId": "kv_staging", "periodo": "mensual", "limiteBlando": 80, "limiteDuro": 100, "gastado": 22.15, "reservado": 0 },
+
+    { "id": "pre_p_org_mes", "orgId": "org_pmartin", "ambito": "organizacion", "claveId": null, "periodo": "mensual", "limiteBlando": 15, "limiteDuro": 20, "gastado": 11.42, "reservado": 0.02 },
+    { "id": "pre_p_tg_dia", "orgId": "org_pmartin", "ambito": "clave", "claveId": "kv_telegram", "periodo": "diario", "limiteBlando": 1, "limiteDuro": 1.5, "gastado": 0.31, "reservado": 0 }
+  ],
+  "canales": [
+    { "id": "can_email_laura", "orgId": "org_nexo", "tipo": "email", "destino": "laura.gomez@nexoanalytics.es", "avisos": ["incidente", "limite_blando", "cuota", "tope_excedente"], "activo": true },
+    { "id": "can_slack", "orgId": "org_nexo", "tipo": "slack", "destino": "#ia-alertas (workspace nexo)", "avisos": ["incidente", "limite_blando"], "activo": true },
+    { "id": "can_teams", "orgId": "org_nexo", "tipo": "teams", "destino": "Equipo Finanzas › Canal General", "avisos": ["limite_blando", "cuota", "tope_excedente"], "activo": true },
+    { "id": "can_webhook", "orgId": "org_nexo", "tipo": "webhook", "destino": "https://ops.nexoanalytics.es/hooks/unburn", "avisos": ["incidente"], "activo": false },
+    { "id": "can_email_pablo", "orgId": "org_pmartin", "tipo": "email", "destino": "pablo@pmartin.dev", "avisos": ["incidente", "limite_blando", "cuota"], "activo": true }
+  ],
+  "alertas": [
+    { "id": "al_9921", "orgId": "org_nexo", "fecha": "2026-10-21T16:37:00", "canal": "can_slack", "motivo": "incidente", "resumen": "inc_R4t8Wm · Bucle entre agente-investigador y agente-redactor bloqueado en prod-equipo-research", "enlace": "/app/incidentes/inc_R4t8Wm" },
+    { "id": "al_9920", "orgId": "org_nexo", "fecha": "2026-10-21T16:37:00", "canal": "can_email_laura", "motivo": "incidente", "resumen": "inc_R4t8Wm · Bucle entre agente-investigador y agente-redactor bloqueado en prod-equipo-research", "enlace": "/app/incidentes/inc_R4t8Wm" },
+    { "id": "al_9907", "orgId": "org_nexo", "fecha": "2026-10-21T13:58:00", "canal": "can_slack", "motivo": "limite_blando", "resumen": "equipo-datos ha cruzado el límite blando diario (40 €)", "enlace": "/app/presupuestos" },
+    { "id": "al_9906", "orgId": "org_nexo", "fecha": "2026-10-21T13:58:00", "canal": "can_teams", "motivo": "limite_blando", "resumen": "equipo-datos ha cruzado el límite blando diario (40 €)", "enlace": "/app/presupuestos" },
+    { "id": "al_9894", "orgId": "org_nexo", "fecha": "2026-10-21T10:41:00", "canal": "can_slack", "motivo": "incidente", "resumen": "inc_K2p7Qa · Consumo anómalo en prod-chatbot-soporte: cambiado a gpt-4.1-mini", "enlace": "/app/incidentes/inc_K2p7Qa" },
+    { "id": "al_9850", "orgId": "org_nexo", "fecha": "2026-10-19T08:00:00", "canal": "can_teams", "motivo": "cuota", "resumen": "Has llegado al 80 % de las peticiones incluidas en tu plan Pro (400.000 de 500.000)", "enlace": "/app/suscripcion" },
+    { "id": "al_9851", "orgId": "org_nexo", "fecha": "2026-10-19T08:00:00", "canal": "can_email_laura", "motivo": "cuota", "resumen": "Has llegado al 80 % de las peticiones incluidas en tu plan Pro (400.000 de 500.000)", "enlace": "/app/suscripcion" },
+    { "id": "al_p_301", "orgId": "org_pmartin", "fecha": "2026-10-17T20:12:00", "canal": "can_email_pablo", "motivo": "cuota", "resumen": "Has llegado al 80 % de las 10.000 peticiones del plan Gratis", "enlace": "/app/suscripcion" },
+    { "id": "al_p_298", "orgId": "org_pmartin", "fecha": "2026-10-15T23:04:00", "canal": "can_email_pablo", "motivo": "incidente", "resumen": "inc_P7e2Gx · Posible bucle en proyecto-tfg (solo aviso)", "enlace": "/app/incidentes/inc_P7e2Gx" }
+  ]
+}

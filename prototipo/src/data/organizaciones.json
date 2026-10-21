@@ -1,0 +1,94 @@
+[
+ {
+  "id": "org_nexo",
+  "nombre": "Nexo Analytics S.L.",
+  "cif": "B87654321",
+  "direccionFiscal": "Calle de Alcalá 214, 28028 Madrid",
+  "zonaHoraria": "Europe/Madrid",
+  "politicaFallosDefecto": "bloquear",
+  "socio": "Agencia Autómata (propuesta)",
+  "fechaAlta": "2026-03-04",
+  "estado": "activa",
+  "suscripcion": {
+   "plan": "pro",
+   "fechaAlta": "2026-03-04",
+   "contratoTratamientoAceptado": "2026-03-04T10:12:00",
+   "estado": "activa",
+   "topeExcedente": 150,
+   "mesActual": {
+    "mes": "2026-10",
+    "peticionesFacturables": 412380,
+    "excedente": 0
+   },
+   "medioPago": {
+    "marca": "Visa",
+    "ultimos4": "4417",
+    "caduca": "08/28"
+   },
+   "historico": [
+    {
+     "mes": "2026-05",
+     "peticionesFacturables": 301220,
+     "excedente": 0
+    },
+    {
+     "mes": "2026-06",
+     "peticionesFacturables": 388410,
+     "excedente": 0
+    },
+    {
+     "mes": "2026-07",
+     "peticionesFacturables": 462905,
+     "excedente": 0
+    },
+    {
+     "mes": "2026-08",
+     "peticionesFacturables": 531870,
+     "excedente": 1
+    },
+    {
+     "mes": "2026-09",
+     "peticionesFacturables": 497310,
+     "excedente": 0
+    }
+   ],
+   "avisos": {
+    "cuota80": true
+   }
+  }
+ },
+ {
+  "id": "org_pmartin",
+  "nombre": "Pablo Martín (cuenta personal)",
+  "cif": "12345678Z",
+  "direccionFiscal": "Calle Mayor 9, 50001 Zaragoza",
+  "zonaHoraria": "Europe/Madrid",
+  "politicaFallosDefecto": "bloquear",
+  "socio": null,
+  "fechaAlta": "2026-08-19",
+  "estado": "activa",
+  "suscripcion": {
+   "plan": "gratis",
+   "fechaAlta": "2026-08-19",
+   "contratoTratamientoAceptado": "2026-08-19T18:40:00",
+   "estado": "activa",
+   "topeExcedente": null,
+   "mesActual": {
+    "mes": "2026-10",
+    "peticionesFacturables": 8640,
+    "excedente": 0
+   },
+   "medioPago": null,
+   "historico": [
+    {
+     "mes": "2026-09",
+     "peticionesFacturables": 6210,
+     "excedente": 0
+    }
+   ],
+   "avisos": {
+    "cuota80": true
+   }
+  }
+ }
+]

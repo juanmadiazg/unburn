@@ -1,0 +1,478 @@
+{
+ "clavesProveedor": [
+  {
+   "id": "kp_openai_nexo",
+   "orgId": "org_nexo",
+   "proveedor": "OpenAI",
+   "cuenta": "proyecto nexo-prod",
+   "huella": "c1f0…9a2e",
+   "fechaAlta": "2026-03-04",
+   "ultimaRotacion": "2026-09-01"
+  },
+  {
+   "id": "kp_anthropic_nexo",
+   "orgId": "org_nexo",
+   "proveedor": "Anthropic",
+   "cuenta": "workspace nexo-agents",
+   "huella": "77ab…01dd",
+   "fechaAlta": "2026-04-12",
+   "ultimaRotacion": "2026-04-12"
+  },
+  {
+   "id": "kp_openai_pablo",
+   "orgId": "org_pmartin",
+   "proveedor": "OpenAI",
+   "cuenta": "proyecto personal-pmartin",
+   "huella": "e93c…b411",
+   "fechaAlta": "2026-08-19",
+   "ultimaRotacion": "2026-08-19"
+  }
+ ],
+ "clavesVirtuales": [
+  {
+   "id": "kv_research",
+   "orgId": "org_nexo",
+   "nombre": "prod-equipo-research",
+   "tipo": "equipo",
+   "prefijo": "ub_live_R7qM",
+   "huella": "4be1…f0c3",
+   "estado": "activa",
+   "claveProveedorId": "kp_anthropic_nexo",
+   "modelos": [
+    "claude-sonnet-4-5",
+    "claude-haiku-4-5"
+   ],
+   "agentes": [
+    "agente-orquestador",
+    "agente-investigador",
+    "agente-redactor"
+   ],
+   "herramientasProveedor": [
+    "web_search"
+   ],
+   "politicaBucles": "bloqueo",
+   "politicaFallos": "bloquear",
+   "modeloSustituto": "claude-haiku-4-5",
+   "maxEntrada": 120000,
+   "maxRespuesta": 8000,
+   "sustituyeA": null,
+   "creada": "2026-04-12",
+   "ultimoUso": "2026-10-21T16:40:00",
+   "gastoHoy": 21.84,
+   "gastoMes": 512.4,
+   "peticionesMes": 118230,
+   "lineaBase": {
+    "eurosMin": 0.052,
+    "varEurosMin": 0.018,
+    "tokensMin": 21400,
+    "varTokensMin": 6100,
+    "endurecidoHasta": null
+   },
+   "cadenasRespuestas": 1204,
+   "pctSinSesion": 4
+  },
+  {
+   "id": "kv_chatbot",
+   "orgId": "org_nexo",
+   "nombre": "prod-chatbot-soporte",
+   "tipo": "agente",
+   "prefijo": "ub_live_C2wX",
+   "huella": "a03d…7e19",
+   "estado": "activa",
+   "claveProveedorId": "kp_openai_nexo",
+   "modelos": [
+    "gpt-4.1",
+    "gpt-4.1-mini"
+   ],
+   "agentes": [
+    "agente-soporte"
+   ],
+   "herramientasProveedor": [],
+   "politicaBucles": "aviso",
+   "politicaFallos": "bloquear",
+   "modeloSustituto": "gpt-4.1-mini",
+   "maxEntrada": 32000,
+   "maxRespuesta": 2000,
+   "sustituyeA": null,
+   "creada": "2026-03-05",
+   "ultimoUso": "2026-10-21T16:44:00",
+   "gastoHoy": 9.8,
+   "gastoMes": 301.75,
+   "peticionesMes": 214880,
+   "lineaBase": {
+    "eurosMin": 0.031,
+    "varEurosMin": 0.009,
+    "tokensMin": 9800,
+    "varTokensMin": 2900,
+    "endurecidoHasta": null
+   },
+   "cadenasRespuestas": 18233,
+   "pctSinSesion": 2
+  },
+  {
+   "id": "kv_facturacion",
+   "orgId": "org_nexo",
+   "nombre": "prod-facturacion",
+   "tipo": "agente",
+   "prefijo": "ub_live_F9pT",
+   "huella": "19c7…2a5b",
+   "estado": "activa",
+   "claveProveedorId": "kp_openai_nexo",
+   "modelos": [
+    "gpt-4.1",
+    "o4-mini"
+   ],
+   "agentes": [
+    "agente-facturacion"
+   ],
+   "herramientasProveedor": [],
+   "politicaBucles": "bloqueo",
+   "politicaFallos": "bloquear",
+   "modeloSustituto": "gpt-4.1-mini",
+   "maxEntrada": 64000,
+   "maxRespuesta": 4000,
+   "sustituyeA": "kv_facturacion_old",
+   "creada": "2026-09-01",
+   "ultimoUso": "2026-10-21T15:20:00",
+   "gastoHoy": 4.12,
+   "gastoMes": 96.7,
+   "peticionesMes": 21410,
+   "lineaBase": {
+    "eurosMin": 0.009,
+    "varEurosMin": 0.004,
+    "tokensMin": 3100,
+    "varTokensMin": 1100,
+    "endurecidoHasta": null
+   },
+   "cadenasRespuestas": 310,
+   "pctSinSesion": 0
+  },
+  {
+   "id": "kv_datos",
+   "orgId": "org_nexo",
+   "nombre": "equipo-datos",
+   "tipo": "equipo",
+   "prefijo": "ub_live_D4nB",
+   "huella": "6f2e…c8a0",
+   "estado": "activa",
+   "claveProveedorId": "kp_openai_nexo",
+   "modelos": [
+    "gpt-4.1",
+    "o4-mini"
+   ],
+   "agentes": [
+    "agente-sql"
+   ],
+   "herramientasProveedor": [
+    "code_execution"
+   ],
+   "politicaBucles": "aviso",
+   "politicaFallos": "bloquear",
+   "modeloSustituto": "gpt-4.1-mini",
+   "maxEntrada": 128000,
+   "maxRespuesta": 16000,
+   "sustituyeA": null,
+   "creada": "2026-05-20",
+   "ultimoUso": "2026-10-21T13:58:00",
+   "gastoHoy": 50.0,
+   "gastoMes": 287.35,
+   "peticionesMes": 39760,
+   "lineaBase": {
+    "eurosMin": 0.034,
+    "varEurosMin": 0.015,
+    "tokensMin": 8800,
+    "varTokensMin": 3600,
+    "endurecidoHasta": null
+   },
+   "cadenasRespuestas": 96,
+   "pctSinSesion": 9
+  },
+  {
+   "id": "kv_staging",
+   "orgId": "org_nexo",
+   "nombre": "staging",
+   "tipo": "entorno",
+   "prefijo": "ub_test_S8kL",
+   "huella": "d51a…3b77",
+   "estado": "activa",
+   "claveProveedorId": "kp_anthropic_nexo",
+   "modelos": [
+    "claude-haiku-4-5",
+    "claude-sonnet-4-5"
+   ],
+   "agentes": [],
+   "herramientasProveedor": [],
+   "politicaBucles": "aviso",
+   "politicaFallos": "dejar_pasar",
+   "modeloSustituto": "claude-haiku-4-5",
+   "maxEntrada": 64000,
+   "maxRespuesta": 4000,
+   "sustituyeA": null,
+   "creada": "2026-04-15",
+   "ultimoUso": "2026-10-21T12:10:00",
+   "gastoHoy": 1.92,
+   "gastoMes": 22.15,
+   "peticionesMes": 14870,
+   "lineaBase": {
+    "eurosMin": 0.004,
+    "varEurosMin": 0.003,
+    "tokensMin": 1900,
+    "varTokensMin": 1200,
+    "endurecidoHasta": null
+   },
+   "cadenasRespuestas": 41,
+   "pctSinSesion": 31
+  },
+  {
+   "id": "kv_dev",
+   "orgId": "org_nexo",
+   "nombre": "dev-local-ivan",
+   "tipo": "entorno",
+   "prefijo": "ub_test_V1hZ",
+   "huella": "0c9b…e4f2",
+   "estado": "activa",
+   "claveProveedorId": "kp_openai_nexo",
+   "modelos": [
+    "gpt-4.1-mini"
+   ],
+   "agentes": [],
+   "herramientasProveedor": [],
+   "politicaBucles": "aviso",
+   "politicaFallos": "dejar_pasar",
+   "modeloSustituto": null,
+   "maxEntrada": 16000,
+   "maxRespuesta": 2000,
+   "sustituyeA": null,
+   "creada": "2026-06-02",
+   "ultimoUso": "2026-10-20T19:31:00",
+   "gastoHoy": 0,
+   "gastoMes": 3.48,
+   "peticionesMes": 3230,
+   "lineaBase": {
+    "eurosMin": 0.001,
+    "varEurosMin": 0.001,
+    "tokensMin": 600,
+    "varTokensMin": 500,
+    "endurecidoHasta": null
+   },
+   "cadenasRespuestas": 12,
+   "pctSinSesion": 88
+  },
+  {
+   "id": "kv_facturacion_old",
+   "orgId": "org_nexo",
+   "nombre": "prod-facturacion (anterior)",
+   "tipo": "agente",
+   "prefijo": "ub_live_F1aa",
+   "huella": "8a40…11c9",
+   "estado": "sustituida",
+   "claveProveedorId": "kp_openai_nexo",
+   "modelos": [
+    "gpt-4.1",
+    "o4-mini"
+   ],
+   "agentes": [
+    "agente-facturacion"
+   ],
+   "herramientasProveedor": [],
+   "politicaBucles": "bloqueo",
+   "politicaFallos": "bloquear",
+   "modeloSustituto": "gpt-4.1-mini",
+   "maxEntrada": 64000,
+   "maxRespuesta": 4000,
+   "sustituyeA": null,
+   "creada": "2026-03-10",
+   "ultimoUso": "2026-09-01T09:14:00",
+   "gastoHoy": 0,
+   "gastoMes": 0,
+   "peticionesMes": 0,
+   "lineaBase": {
+    "eurosMin": 0,
+    "varEurosMin": 0,
+    "tokensMin": 0,
+    "varTokensMin": 0,
+    "endurecidoHasta": null
+   },
+   "cadenasRespuestas": 0,
+   "pctSinSesion": 0
+  },
+  {
+   "id": "kv_hackathon",
+   "orgId": "org_nexo",
+   "nombre": "pruebas-hackathon",
+   "tipo": "entorno",
+   "prefijo": "ub_test_H3ck",
+   "huella": "f7d2…aa08",
+   "estado": "revocada",
+   "claveProveedorId": "kp_openai_nexo",
+   "modelos": [
+    "gpt-4.1-mini"
+   ],
+   "agentes": [],
+   "herramientasProveedor": [],
+   "politicaBucles": "aviso",
+   "politicaFallos": "bloquear",
+   "modeloSustituto": null,
+   "maxEntrada": 16000,
+   "maxRespuesta": 2000,
+   "sustituyeA": null,
+   "creada": "2026-06-20",
+   "ultimoUso": "2026-06-22T23:50:00",
+   "gastoHoy": 0,
+   "gastoMes": 0,
+   "peticionesMes": 0,
+   "lineaBase": {
+    "eurosMin": 0,
+    "varEurosMin": 0,
+    "tokensMin": 0,
+    "varTokensMin": 0,
+    "endurecidoHasta": null
+   },
+   "cadenasRespuestas": 0,
+   "pctSinSesion": 0
+  },
+  {
+   "id": "kv_tfg",
+   "orgId": "org_pmartin",
+   "nombre": "proyecto-tfg",
+   "tipo": "entorno",
+   "prefijo": "ub_live_P5tf",
+   "huella": "2d8c…6b10",
+   "estado": "activa",
+   "claveProveedorId": "kp_openai_pablo",
+   "modelos": [
+    "gpt-4.1-mini"
+   ],
+   "agentes": [],
+   "herramientasProveedor": [
+    "web_search"
+   ],
+   "politicaBucles": "aviso",
+   "politicaFallos": "bloquear",
+   "modeloSustituto": null,
+   "maxEntrada": 32000,
+   "maxRespuesta": 4000,
+   "sustituyeA": null,
+   "creada": "2026-08-19",
+   "ultimoUso": "2026-10-21T15:58:00",
+   "gastoHoy": 0.62,
+   "gastoMes": 7.1,
+   "peticionesMes": 5120,
+   "lineaBase": {
+    "eurosMin": 0.002,
+    "varEurosMin": 0.001,
+    "tokensMin": 900,
+    "varTokensMin": 400,
+    "endurecidoHasta": null
+   },
+   "cadenasRespuestas": 77,
+   "pctSinSesion": 100
+  },
+  {
+   "id": "kv_telegram",
+   "orgId": "org_pmartin",
+   "nombre": "bot-telegram",
+   "tipo": "agente",
+   "prefijo": "ub_live_P7tg",
+   "huella": "b6e0…4c21",
+   "estado": "activa",
+   "claveProveedorId": "kp_openai_pablo",
+   "modelos": [
+    "gpt-4.1-mini"
+   ],
+   "agentes": [],
+   "herramientasProveedor": [],
+   "politicaBucles": "bloqueo",
+   "politicaFallos": "bloquear",
+   "modeloSustituto": null,
+   "maxEntrada": 8000,
+   "maxRespuesta": 1000,
+   "sustituyeA": null,
+   "creada": "2026-08-22",
+   "ultimoUso": "2026-10-21T14:03:00",
+   "gastoHoy": 0.31,
+   "gastoMes": 3.86,
+   "peticionesMes": 3290,
+   "lineaBase": {
+    "eurosMin": 0.001,
+    "varEurosMin": 0.001,
+    "tokensMin": 500,
+    "varTokensMin": 300,
+    "endurecidoHasta": null
+   },
+   "cadenasRespuestas": 640,
+   "pctSinSesion": 100
+  },
+  {
+   "id": "kv_exp",
+   "orgId": "org_pmartin",
+   "nombre": "experimentos",
+   "tipo": "entorno",
+   "prefijo": "ub_test_P9ex",
+   "huella": "5a17…d930",
+   "estado": "activa",
+   "claveProveedorId": "kp_openai_pablo",
+   "modelos": [
+    "gpt-4.1-mini",
+    "o4-mini"
+   ],
+   "agentes": [],
+   "herramientasProveedor": [],
+   "politicaBucles": "aviso",
+   "politicaFallos": "bloquear",
+   "modeloSustituto": null,
+   "maxEntrada": 16000,
+   "maxRespuesta": 2000,
+   "sustituyeA": null,
+   "creada": "2026-09-30",
+   "ultimoUso": "2026-10-19T22:41:00",
+   "gastoHoy": 0,
+   "gastoMes": 0.46,
+   "peticionesMes": 230,
+   "lineaBase": {
+    "eurosMin": 0.0005,
+    "varEurosMin": 0.0004,
+    "tokensMin": 200,
+    "varTokensMin": 150,
+    "endurecidoHasta": null
+   },
+   "cadenasRespuestas": 3,
+   "pctSinSesion": 100
+  }
+ ],
+ "tokensApi": [
+  {
+   "id": "tok_1",
+   "orgId": "org_nexo",
+   "nombre": "terraform-ci",
+   "prefijo": "ub_admin_T4rf",
+   "alcance": "administracion",
+   "creado": "2026-06-11",
+   "ultimoUso": "2026-10-21T07:02:00",
+   "creadoPor": "Iván Ortega",
+   "estado": "activo"
+  },
+  {
+   "id": "tok_2",
+   "orgId": "org_nexo",
+   "nombre": "grafana-lectura",
+   "prefijo": "ub_read_G9fn",
+   "alcance": "lectura",
+   "creado": "2026-08-03",
+   "ultimoUso": "2026-10-21T16:40:00",
+   "creadoPor": "Laura Gómez",
+   "estado": "activo"
+  },
+  {
+   "id": "tok_3",
+   "orgId": "org_pmartin",
+   "nombre": "script-local",
+   "prefijo": "ub_admin_P2sc",
+   "alcance": "administracion",
+   "creado": "2026-09-02",
+   "ultimoUso": "2026-10-12T21:10:00",
+   "creadoPor": "Pablo Martín",
+   "estado": "activo"
+  }
+ ]
+}
